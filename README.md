@@ -5,6 +5,7 @@
 ![Obsidian](https://img.shields.io/badge/Formated_for-Obsidian-purple?style=flat-square&logo=obsidian)
 
 **RU:** Личная база знаний, шпаргалки и конспекты по языку **Rust** и популярным крейтам для разработки CLI и системных утилит.  
+
 **ENG:** A personal knowledge base, cheat sheets, and notes on the **Rust** language and popular crates for developing CLI tools and system utilities.
 
 ---
