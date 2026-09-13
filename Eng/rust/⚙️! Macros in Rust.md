@@ -2,32 +2,39 @@
 
 Macros are metaprogramming (code that writes code).
 
-- **Main difference from functions:** Functions work with *values* at runtime. Macros work with the *abstract syntax tree (AST)* at compile time.
+- **Main difference from functions:** Functions work with _values_ during program execution (runtime). Macros operate on the syntax tree (AST) at compile time.
 
-- **Example with `println!`:** A regular function in Rust cannot take a variable number of arguments of different types. The `println!` macro can:
+- **Example with `println!`:** A regular function in Rust cannot accept a variable number of arguments of different types. The `println!` macro can:
 
-```rust
+
+
+```Rust
 println!("Hello"); // 1 argument
 println!("Number: {}, text: {}", 10, "abc"); // 3 arguments of different types!
 ```
 
-### 2. Why is the `!` (exclamation mark) needed?
 
-- It signals to the compiler and the developer: "This is not a standard function call! Code generation happens here."
 
-- This allows the compiler to check arguments before running the program. For example, if you pass 2 variables to `println!("{}", a, b)` but only specify one `{}` placeholder, **Rust will throw a compile-time error** instead of crashing at runtime!
+### 2. Why do we need `!` (exclamation mark)?
+
+- Signals the compiler and programmer: “This is not a standard function call! This is where the code generation happens.”
+
+- This allows the compiler to check arguments before running the program. For example, if in `println!("{}", a, b)` you pass 2 variables, and you specify one parenthesis `{}`, **Rust will throw an error during build**, and not crash in runtime!
+
 
 ### 3. Two main categories of macros in Rust
 
-**A. Declarative Macros (`macro_rules!`)**
+**A. Declarative macros (`macro_rules!`)**
 
-- The most common type (this is how `vec!`, `println!`, and `format!` are made).
+- The most common type (this is how `vec!`, `println!`, `format!` are made).
 
-- They work on the principle of **Pattern Matching**: inserting code depending on what you passed.
+- They work on the **Pattern Matching** principle: they substitute the code depending on what you passed.
 
-- Example of a simple macro:
+- An example of a simple macro:
 
-```rust
+
+
+```Rust
 macro_rules! say_hello {
     () => {
         println!("Hello!");
@@ -35,34 +42,43 @@ macro_rules! say_hello {
 }
 
 fn main() {
-    say_hello!(); // Expands into println!("Hello!");
+    say_hello!(); // Expand to println!("Hello!");
 }
+
 ```
 
-**B. Procedural Macros** Accept Rust code as a token stream, modify it, and return new code. Divided into 3 types:
 
-1. **Derive macros (`#[derive(...)]`):** Automatically generate trait implementations for structs.
+**B. Procedural Macros** Take Rust code as a stream of tokens, modify it, and return new code. Divided into 3 types:
 
-```rust
-#[derive(Debug, Clone)] // Calls macros to generate debugging and cloning code
+1. **Derive macros (`#[derive(...)]`):** Automatically generate trait implementations for structures.
+
+
+
+```Rust
+#[derive(Debug, Clone)] // Calls macros to generate debug and clone code
 struct User { name: String }
 ```
 
-2. **Attribute-like macros (`#[tokio::main]`, `#[get("/")]`):** Attached to functions or structs and completely rewrite their internals.
+2. **Attribute macros (`#[tokio::main]`, `#[get("/")]`):** They are attached to functions or structures and completely rewrite their internals.
 
-3. **Function-like macros:** Called like `custom_macro!(...)`, but process contents with complex logic (e.g., `sqlx::query!`, which checks SQL queries directly against the database at compile time).
+3. **Function-like macros:** Called as `custom_macro!(...)`, but process the contents with complex logic (for example, `sqlx::query!`, which checks SQL queries directly in the database at compile time).
 
 ### 4. In short
 
-In short, a macro is a thing that invokes code and generates it. For instance, when you need to pass a variable into a function, you create a template macro, then invoke it, pass the parameters, and that's it — basically, it's a boilerplate template.
+In short, a macro is a thing that calls code and does it, like you need to throw a variable into a function, you make a template macro, then you call it, throw parameters and that’s it, in short, it’s a template
 
 ### 5. Pros and cons of macros
 
 - **Pros:**
-  - Saves you from writing chunks of boilerplate code.
-  - Safety: checks happen at compile time.
-  - Allows creating convenient APIs (like the utility `vec![1, 2, 3]`).
+
+- Eliminates the need to write packs of template code (boilerplate).
+
+- Security: checks occur at the compilation stage.
+
+- Allows you to create convenient APIs (like the `vec![1, 2, 3]` utility).
 
 - **Cons:**
-  - Increases project compilation time.
-  - Expanded code is hard to debug and read if the macro is overloaded with logic.
+
+- Increases project compilation time.
+
+- Deployable code is difficult to debug and read if the macro is overloaded with logic.

@@ -1,51 +1,51 @@
-### 🚀 Базовый цикл (Закоммитить и отправить)
+### 🚀 Basic Loop (Commit and Send)
 
 
 
 ```Bash
-git status                     # Посмотреть, что изменилось
-git add .                      # Добавить ВСЕ изменённые файлы в индекс
-git add path/to/file           # Добавить только конкретный файл
-git commit -m "Сообщение"      # Зафиксировать изменения с комментарием
-git push origin main           # Отправить коммиты на GitHub в ветку main
+git status # See what has changed
+git add .                      # Add ALL changed files to the index
+git add path/to/file # Add only a specific file
+git commit -m "Message" # Commit changes with comment
+git push origin main # Push commits to GitHub to the main branch
 ```
 
-### 🔄 Забрать обновления с GitHub
+### 🔄 Get updates from GitHub
 
 
 
 ```Bash
-git pull origin main           # Скачать и сразу объединить свежие изменения с сайта
-git fetch                      # Просто проверить/скачать изменения без объединения
+git pull origin main # Download and immediately merge the latest changes from the site
+git fetch # Just check/download changes without merging
 ```
 
-### 🛠️ Исправление косяков (Отмена и очистка)
+### 🛠️ Fixing jambs (Cancel and clear)
 
 
 
 ```Bash
-git restore .                  # Сбросить все несохранённые локальные изменения (опасно!)
-git restore path/to/file       # Сбросить изменения только в одном файле
-git checkout -b new-branch     # Создать новую ветку и сразу перейти в неё
-git branch -D branch-name      # Векти удалить локально
+git restore . # Reset all saved local changes (dangerous!)
+git restore path/to/file # Reset changes to only one file
+git checkout -b new-branch # Create a new branch and immediately jump into it
+git branch -D branch-name # Delete Vecti locally
 ```
 
-### 🏷️ Теги и Релизы (Для сборки в Actions)
+### 🏷️ Tags and Releases (For assembly in Actions)
 
 
 
 ```Bash
-git tag -a v1.0.0 -m "Release v1.0.0"   # Создать локальный тег версии
-git push origin v1.0.0                  # Отправить тег на GitHub (запустит релиз)
-git tag -d v1.0.0                       # Удалить тег локально
-git push origin --delete v1.0.0         # Удалить тег на GitHub
+git tag -a v1.0.0 -m "Release v1.0.0" # Create a local version tag
+git push origin v1.0.0 # Push the tag to GitHub (will trigger the release)
+git tag -d v1.0.0 # Remove tag locally
+git push origin --delete v1.0.0 # Delete a tag on GitHub
 ```
 
-### 📜 История и сравнение
+### 📜 History and comparison
 
 
 
 ```Bash
-git log --oneline              # Краткая история коммитов (одна строка на коммит)
-git diff                       # Посмотреть не закоммиченные правки прямо в терминале
+git log --oneline # Brief history of commits (one line per commit)
+git diff # View uncommitted edits directly in the terminal
 ```

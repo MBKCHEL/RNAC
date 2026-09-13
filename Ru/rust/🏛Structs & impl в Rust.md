@@ -44,7 +44,7 @@ let user1 = User {
 ```Rust
 let user2 = User {
     name: String::from("BALBES"),
-    email: String::from("kdan2401@gmail.com"),
+    email: String::from("вашпример@gmail.com"),
     ..user1 // Все остальные поля (age, active) заберутся из user1!
 };
 ```
