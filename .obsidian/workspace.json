@@ -232,17 +232,17 @@
             }
           },
           {
-            "id": "437e43651724a0f9",
+            "id": "77661924fac6ba30",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rust/⚠️Обработка ошибок в Rust.md",
+                "file": "Ru/rust/⚡ HashMap в Rust.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "⚠️Обработка ошибок в Rust"
+              "title": "⚡ HashMap в Rust"
             }
           },
           {
@@ -299,7 +299,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Файловый менеджер"
+              "title": "Files"
             }
           },
           {
@@ -429,50 +429,56 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Меню быстрого перехода": false,
-      "graph:Граф": false,
-      "canvas:Создать новый холст": false,
-      "daily-notes:Сегодняшняя заметка": false,
-      "templates:Вставить шаблон": false,
-      "command-palette:Открыть палитру команд": false,
-      "bases:Создать новую базу": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
     }
   },
-  "active": "437e43651724a0f9",
+  "active": "77661924fac6ba30",
   "lastOpenFiles": [
-    "rust/📝Модификация строк через push_str в Rust.md",
-    "rust/📥Ввод данных, Затенение, Turbofish и Кастинг в Rust.md",
-    "rust/🔁Все циклы в Rust (loop, while, for).md",
-    "rust/🔄 Итераторы в Rust (Iterator).md",
-    "rust/🔒Константы в языке Rust.md",
-    "rust/🖥 Rust - Вывод текста через println!.md",
-    "rust/🧠Управление памятью в Rust (Ownership & Borrowing).md",
-    "rust/🔀Конвертация типов в Rust (Option, Result, числа и типы).md",
-    "rust/🔀Else-if в Rust.md",
-    "rust/📊Enum Ordering в Rust.md",
-    "rust/⚙️! Макросы в Rust.md",
-    "rust/⚠️Обработка ошибок в Rust.md",
-    "rust/❓Option<T>, Some и None в Rust.md",
-    "rust/⚡ HashMap в Rust.md",
-    "rust/🏛Structs & impl в Rust.md",
-    "rust/🎯Match в Rust - аналог иф елсе или свитч кейсов.md",
-    "rust/🏷enum (Перечисления) в Rust.md",
-    "rust/🐙GIt commands.md",
-    "rust/📌Переменные в Rust.md",
-    "rust/📚Стек (Stack) vs Куча (Heap).md",
-    "rust/📦Блоки-Выражения (Block Expressions) в RUst.md",
-    "rust/📦Всё о Cargo и всё о rustup Rust.md",
-    "rust/🧩Модульная система и разделение на файлы в Rust.md",
-    "rust/🛠️ Текстовые буферы в Rust.md",
-    "rust/🛠️ Полезные функции в Rust.md",
-    "rust/🧬Векторы в Rust Vec.md",
+    "Ru/CLI terminal/🐀Крейт Ratatui для CLI и терминала.md",
+    "Ru/Audio/🎧Rodio - крейт воспроизведение звука в Rust.md",
+    "En",
+    "Em",
+    "Ru/rust/🧱Кортежи в языке Rust.md",
+    "Ru/rust/🧮Массивы в языке Rust.md",
+    "Ru/rust/🧬Векторы в Rust Vec.md",
+    "Ru/rust/🧩Модульная система и разделение на файлы в Rust.md",
+    "Ru/rust/🧠Управление памятью в Rust (Ownership & Borrowing).md",
+    "Ru/rust/🛠️ Текстовые буферы в Rust.md",
+    "Ru/rust/🛠️ Полезные функции в Rust.md",
+    "Ru/rust/🖥 Rust - Вывод текста через println!.md",
+    "Ru/rust/🔒Константы в языке Rust.md",
+    "Ru/rust/🔄 Итераторы в Rust (Iterator).md",
+    "Ru/rust/🔁Все циклы в Rust (loop, while, for).md",
+    "Ru/rust/🔀Конвертация типов в Rust (Option, Result, числа и типы).md",
+    "Ru/rust/🔀Else-if в Rust.md",
+    "Ru/rust/📦Всё о Cargo и всё о rustup Rust.md",
+    "Ru/rust/📦Блоки-Выражения (Block Expressions) в RUst.md",
+    "Ru/rust/📥Ввод данных, Затенение, Turbofish и Кастинг в Rust.md",
+    "Ru/rust/📝Модификация строк через push_str в Rust.md",
+    "Ru/rust/📚Стек (Stack) vs Куча (Heap).md",
+    "Ru/rust/📌Переменные в Rust.md",
+    "Ru/rust/📊Enum Ordering в Rust.md",
+    "Ru/rust/📁 Чтение файлов и работа с директориями в Rust.md",
+    "Ru/rust/🐙GIt commands.md",
+    "Ru/rust/🏷enum (Перечисления) в Rust.md",
+    "Ru/rust/🏛Structs & impl в Rust.md",
+    "Ru/rust/Pasted image 20260723124517.png",
+    "Ru/rust",
+    "Ru/FileSystem",
+    "Ru/CLI terminal",
+    "Ru/Audio",
+    "Ru",
     "rust/Pasted image 20260723124517.png",
     "Pasted image 20260824151424.png",
     "LICENSE",
     "FileSystem",
     "Audio",
-    "CLI terminal",
-    "Pasted image 20260723124517.png",
-    "Без названия.base"
+    "Pasted image 20260723124517.png"
   ]
 }
