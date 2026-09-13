@@ -3,15 +3,15 @@
 
 # 🦀 My Rust Notes & Cheatsheets
 
+Ru:
 Личная база знаний, шпаргалки и конспекты по языку **Rust** и популярным крейтам для разработки CLI и системных утилит.
 
-## 📂 Структура репозитория
+Eng:
+A personal knowledge base, cheat sheets, and notes on the **Rust** language and popular crates for developing CLI tools and system utilities.
 
-* **`rust/`** — Базовый синтаксис Rust, работа с памятью (Stack/Heap, Ownership), типы данных, циклы, функции, и много другого.
-* **`FileSystem/`** — Работа с файловой системой, путями ОС и файлами (`dirs`, `std::fs`).
-* **`Audio/`** — Работа со звуком и аудиопотоками (`rodio`).
-* **`CLI terminal/`** — Создание терминальных интерфейсов и TUI (`ratatui`, `crossterm`).
-
-## 📜 Лицензия
-
+## 📜 Лицензия / License
+Ru:
 Проект распространяется под лицензией **GNU General Public License v3.0 (GPLv3)**. Подробности в файле [LICENSE](LICENSE).
+
+Eng:
+The project is distributed under the **GNU General Public License v3.0 (GPLv3)**. Details can be found in the [LICENSE](LICENSE) file.
