@@ -1,3 +1,9 @@
+## 👤 Author / Автор
+
+**MBKCHEL** — автор всех текстов / author of all text.
+
+---
+
 # 🦀 My Rust Notes & Cheatsheets
 
 ![Rust](https://img.shields.io/badge/Language-Rust-orange?style=flat-square&logo=rust)
@@ -14,12 +20,6 @@
 
 - `Ru/rust/` — Оригинальные конспекты на русском языке.
 - `Eng/rust/` — Translated notes & cheat sheets in English (formatted for Obsidian).
-
----
-
-## 👤 Author / Автор
-
-**MBKCHEL** — автор всех текстов / author of all text.
 
 ---
 
