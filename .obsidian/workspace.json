@@ -235,10 +235,14 @@
             "id": "e83f21f5dee4648e",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Eng/FileSystem/📁 Directories - System Paths crate.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📁 Directories - System Paths crate"
             }
           },
           {
@@ -422,6 +426,9 @@
   },
   "active": "e83f21f5dee4648e",
   "lastOpenFiles": [
+    "Eng/FileSystem/📁 Dirs - System Paths Crate in Rust.md",
+    "Eng/FileSystem/📁 Directories - System Paths crate.md",
+    "Ru/FileSystem/📁 Directories - крейт для системных путей.md",
     "Eng/rust/🛠️ Useful functions in Rust.md",
     "Eng/rust/🛠️ Text buffers in Rust.md",
     "Eng/rust/🧱Tuples in Rust.md",
@@ -445,9 +452,6 @@
     "Eng/rust/📊Enum Ordering in Rust.md",
     "Eng/rust/🐙GIt commands.md",
     "Eng/rust/🏷enum (Enumerations) in Rust.md",
-    "Eng/rust/🏛Structs & impl in Rust.md",
-    "Ru/rust/🏛Structs & impl в Rust.md",
-    "Eng/rust/🎯Match in Rust is an analogue of if-else or switch cases.md",
     "Eng/rust/Pasted image 20260723124517.png",
     "Eng/rust",
     "Eng/FileSystem",
