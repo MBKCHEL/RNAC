@@ -251,12 +251,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Eng/FileSystem/📁WalkDir - a crate for traversing the file system.md",
+                "file": "Eng/FileSystem/📁 Dirs - System Paths Crate in Rust.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "📁WalkDir - a crate for traversing the file system"
+              "title": "📁 Dirs - System Paths Crate in Rust"
             }
           },
           {
@@ -440,13 +440,13 @@
   },
   "active": "134ac4b0983c1d33",
   "lastOpenFiles": [
+    "Ru/FileSystem/📁 Directories - крейт для системных путей.md",
+    "Ru/FileSystem/📁WalkDir - крейт для обхода файловой системы.md",
+    "Ru/FileSystem/📁 Dirs - крейт на системные пути в Rust.md",
+    "README.md",
+    "Eng/FileSystem/📁WalkDir - a crate for traversing the file system.md",
     "Eng/FileSystem/📁 Directories - System Paths crate.md",
     "Eng/FileSystem/📁 Dirs - System Paths Crate in Rust.md",
-    "Eng/FileSystem/📁WalkDir - a crate for traversing the file system.md",
-    "Ru/FileSystem/📁WalkDir - крейт для обхода файловой системы.md",
-    "README.md",
-    "Ru/FileSystem/📁 Dirs - крейт на системные пути в Rust.md",
-    "Ru/FileSystem/📁 Directories - крейт для системных путей.md",
     "Eng/rust/🛠️ Useful functions in Rust.md",
     "Eng/rust/🛠️ Text buffers in Rust.md",
     "Eng/rust/🧱Tuples in Rust.md",

@@ -15,12 +15,12 @@ dirs = "5.0"
 
 All functions return `Option<PathBuf>`, since in theory a directory might not exist on the system.
 
-| **Function** | **Linux / macOS** | **Windows** |
-| :--- | :--- | :--- |
-| **`dirs::home_dir()`** | `/home/username` | `C:\Users\Username` |
-| **`dirs::audio_dir()`** | `/home/username/Music` | `C:\Users\Username\Music` |
-| **`dirs::config_dir()`** | `/home/username/.config` | `C:\Users\Username\AppData\Roaming` |
-| **`dirs::download_dir()`** | `/home/username/Downloads` | `C:\Users\Username\Downloads` |
+| **Function**             | **Linux / macOS**          | **Windows**                         |
+| :----------------------- | :------------------------- | :---------------------------------- |
+| **dirs::home_dir()**     | `/home/username`           | `C:\Users\Username`                 |
+| **dirs::audio_dir()**    | `/home/username/Music`     | `C:\Users\Username\Music`           |
+| **dirs::config_dir()**   | `/home/username/.config`   | `C:\Users\Username\AppData\Roaming` |
+| **dirs::download_dir()** | `/home/username/Downloads` | `C:\Users\Username\Downloads`       |
 
 ## 💡 Basic Template
 
