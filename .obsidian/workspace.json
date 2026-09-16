@@ -293,12 +293,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Eng/rust/🧩 Traits in Rust.md",
+                "file": "Eng/rust/🛠️ Useful functions in Rust.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "🧩 Traits in Rust"
+              "title": "🛠️ Useful functions in Rust"
             }
           },
           {
@@ -482,8 +482,8 @@
   },
   "active": "90d4ebc60b6285d9",
   "lastOpenFiles": [
-    "Ru/rust/🧩 Traits (Трейты) в Rust.md",
     "Eng/rust/🧩 Traits in Rust.md",
+    "Ru/rust/🧩 Traits (Трейты) в Rust.md",
     "Eng/rust/🛠️ Useful functions in Rust.md",
     "Eng/rust/🛠️ Text buffers in Rust.md",
     "Ru/rust/🛠️ Полезные функции в Rust.md",
