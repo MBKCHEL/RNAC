@@ -1,4 +1,4 @@
-- #len(); - displays the number of BYTES. Exactly bytes, not characters, example in code:
+- # 1. len(); - displays the number of BYTES. Exactly bytes, not characters, example in code:
 ```rust
 fn main() {
 let x = "ggg";  // Set the value of the variable
@@ -66,3 +66,36 @@ We converted the string to bytes (`as_bytes()`), so we must compare elements **w
 2. `b' '` $\rightarrow$ byte code of the space (number `32`).
 
 3. The computer quickly compares **number with number**, making the space search work instantly!
+
+- # 2. \t and \n
+
+\t represents a tab, and \n represents a newline, meaning:
+
+This is \n
+
+```rust
+
+fn main() {
+    println!("Hello\n, world!");
+}
+```
+
+Output:
+```bash
+Hello
+, world!
+```
+
+This is \t
+```rust
+fn main() {
+    println!("Hello");
+    println!("\tworld!");
+}
+```
+
+Output:
+```bash
+Hello
+        world!
+```
