@@ -293,12 +293,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Eng/rust/🛠️ Useful functions in Rust.md",
+                "file": "Ru/rust/⚡ Rust Concurrency Многопоточность.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "🛠️ Useful functions in Rust"
+              "title": "⚡ Rust Concurrency Многопоточность"
             }
           },
           {
@@ -482,9 +482,13 @@
   },
   "active": "90d4ebc60b6285d9",
   "lastOpenFiles": [
+    "Eng/rust/⚡ Rust Concurrency & Multithreading Cheat Sheet.md",
+    "Ru/rust/⚡ Rust Concurrency Многопоточность.md",
+    "Eng/rust/🧩Modular system and file separation in Rust.md",
+    "Eng/rust/🧠Memory management in Rust (Ownership & Borrowing).md",
+    "Eng/rust/🛠️ Useful functions in Rust.md",
     "Eng/rust/🧩 Traits in Rust.md",
     "Ru/rust/🧩 Traits (Трейты) в Rust.md",
-    "Eng/rust/🛠️ Useful functions in Rust.md",
     "Eng/rust/🛠️ Text buffers in Rust.md",
     "Ru/rust/🛠️ Полезные функции в Rust.md",
     "Ru/rust/🛠️ Текстовые буферы в Rust.md",
@@ -495,8 +499,6 @@
     "Ru/rust/📝Модификация строк через push_str в Rust.md",
     "Ru/rust/📦Всё о Cargo и всё о rustup Rust.md",
     "Ru/rust/📥Ввод данных, Затенение, Turbofish и Кастинг в Rust.md",
-    "Ru/rust/⚡ Rust Concurrency Многопоточность.md",
-    "Eng/rust/⚡ Rust Concurrency & Multithreading Cheat Sheet.md",
     "Ru/FileSystem/📁 Dirs - крейт на системные пути в Rust.md",
     "Ru/FileSystem/📁WalkDir - крейт для обхода файловой системы.md",
     "Ru/FileSystem/📁 Directories - крейт для системных путей.md",
@@ -506,8 +508,6 @@
     "Eng/FileSystem/📁 Directories - System Paths crate.md",
     "Eng/rust/🧱Tuples in Rust.md",
     "Eng/rust/🧮Arrays in Rust.md",
-    "Eng/rust/🧬Vectors в Rust Vec.md",
-    "Eng/rust/🧩Modular system and file separation in Rust.md",
     "Eng/rust/Pasted image 20260723124517.png",
     "Eng/rust",
     "Eng/FileSystem",

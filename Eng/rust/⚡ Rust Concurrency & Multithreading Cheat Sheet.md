@@ -53,8 +53,60 @@ fn main() {
 * **`handle.join()`** - Waits for the thread to finish. Without this, `main` might terminate before the child thread gets a chance to run.
 
 ---
+### 3. ### Real-World Example: Running Heavy Functions in Threads
 
-### 3. Transferring Data Between Threads
+Imagine these functions read system files containing system information (like in `/proc` or `/sys`):
+
+```rust
+use std::thread;
+use std::time::Duration;
+
+// Heavy function 1: Parsing system logs
+fn parse_system_logs() -> usize {
+    thread::sleep(Duration::from_millis(300)); // Simulating long computation
+    42 // Return number of errors found
+}
+
+// Heavy function 2: Calculating CPU load
+fn calculate_cpu_load() -> f32 {
+    thread::sleep(Duration::from_millis(200));
+    14.8 // Return CPU load percentage
+}
+
+// Heavy function 3: Scanning disk space
+fn scan_disk_space() -> u64 {
+    thread::sleep(Duration::from_millis(500));
+    1_024_000_000 // Return free bytes
+}
+
+fn main() {
+    println!("🚀 Launching tasks in parallel threads...");
+
+    // Spawn each function in its own background thread
+    let handle_logs = thread::spawn(|| {
+        parse_system_logs() // Calling a standard function inside the closure
+    });
+
+    let handle_cpu = thread::spawn(|| {
+        calculate_cpu_load()
+    });
+
+    let handle_disk = thread::spawn(|| {
+        scan_disk_space()
+    });
+
+    // Retrieve results from threads
+    // .join().unwrap() blocks main until the thread returns its value
+    let log_errors = handle_logs.join().unwrap();
+    let cpu_load = handle_cpu.join().unwrap();
+    let free_space = handle_disk.join().unwrap();
+
+    println!("\n✅ All tasks completed!");
+    println!("Log errors found: {}", log_errors);
+    println!("CPU Load: {}%", cpu_load);
+    println!("Free disk space: {} bytes", free_space);
+}
+### 4. Transferring Data Between Threads
 
 Threads live in isolation. To share or send data, use these three primary mechanisms:
 
@@ -69,7 +121,11 @@ thread::spawn(move || {
     println!("{:?}", data);
 });
 ```
+#### Why this example matters:
 
+- **Parallelism:** If you executed these functions sequentially in a single thread, it would take $300 + 200 + 500 = 1000\text{ ms}$ (1 second). Running them concurrently in parallel threads reduces total runtime to the longest single thread — exactly $500\text{ ms}$!
+    
+- **Returning Values:** The functions return standard Rust types (`usize`, `f32`, `u64`). The closures in `thread::spawn` pass these values through, and `.join().unwrap()` unwraps them directly into variables within the main thread.
 #### B. `mpsc` Channels (Message Passing)
 Follows the pattern: *"Do not communicate by sharing memory; instead, share memory by communicating."*
 
