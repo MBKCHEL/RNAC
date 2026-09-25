@@ -1,4 +1,4 @@
-- #len(); - displays the number of BYTES. Exactly bytes, not characters, example in code:
+- # 1. len(); - displays the number of BYTES. Exactly bytes, not characters, example in code:
 ```rust
 fn main() {
 let x = "ggg";  // Set the value of the variable
@@ -8,7 +8,7 @@ let x = x.len(); // Shadow the x variable and print the number of BYTES
 println!("{x}");  // Prints 3
 }
 ```
-## The main joke len(); it outputs BYTES if, for example, I write a variable: let X = "Dildo"; It displays not 5, but 10, because the Cyrillic alphabet takes up 2 bytes of RAM.
+## The main joke len(); it outputs BYTES if, for example, I write a variable: let X = "Дилдо"; It displays not 5, but 10, because the Cyrillic alphabet takes up 2 bytes of RAM.
 
 
 - # `as_bytes()` in Rust
@@ -66,3 +66,36 @@ We converted the string to bytes (`as_bytes()`), so we must compare elements **w
 2. `b' '` $\rightarrow$ byte code of the space (number `32`).
 
 3. The computer quickly compares **number with number**, making the space search work instantly!
+
+- # 2. \t and \n
+
+\t represents a tab, and \n represents a newline, meaning:
+
+This is \n
+
+```rust
+
+fn main() {
+    println!("Hello\n, world!");
+}
+```
+
+Output:
+```bash
+Hello
+, world!
+```
+
+This is \t
+```rust
+fn main() {
+    println!("Hello");
+    println!("\tworld!");
+}
+```
+
+Output:
+```bash
+Hello
+        world!
+```

@@ -1,6 +1,6 @@
 ## 👤 Author / Автор
 
-**MBKCHEL** — автор всех текстов / author of all text.
+**MBKCHEL** - автор всех текстов / author of all text.
 
 ---
 
@@ -18,8 +18,8 @@
 
 ## 📂 Repository Structure / Структура
 
-- `Ru/rust/` — Оригинальные конспекты на русском языке.
-- `Eng/rust/` — Translated notes & cheat sheets in English (formatted for Obsidian).
+- `Ru/rust/` - Оригинальные конспекты на русском языке.
+- `Eng/rust/` - Translated notes & cheat sheets in English (formatted for Obsidian).
 
 ---
 

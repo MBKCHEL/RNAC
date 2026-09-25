@@ -17,12 +17,12 @@ dirs = "5.0"
 
 Все функции возвращают `Option<PathBuf>`, так как в теории папка может отсутствовать в системе.
 
-|**Функция**|**Linux / macOS**|**Windows**|
-|---|---|---|
-|**`dirs::home_dir()`**|`/home/username`|`C:\Users\Username`|
-|**`dirs::audio_dir()`**|`/home/username/Music`|`C:\Users\Username\Music`|
-|**`dirs::config_dir()`**|`/home/username/.config`|`C:\Users\Username\AppData\Roaming`|
-|**`dirs::download_dir()`**|`/home/username/Downloads`|`C:\Users\Username\Downloads`|
+| **Функция**              | **Linux / macOS**          | **Windows**                         |
+| ------------------------ | -------------------------- | ----------------------------------- |
+| **dirs::home_dir()**     | `/home/username`           | `C:\Users\Username`                 |
+| **dirs::audio_dir()**    | `/home/username/Music`     | `C:\Users\Username\Music`           |
+| **dirs::config_dir()**   | `/home/username/.config`   | `C:\Users\Username\AppData\Roaming` |
+| **dirs::download_dir()** | `/home/username/Downloads` | `C:\Users\Username\Downloads`       |
 
 ## 💡 Базовый Шаблон
 
