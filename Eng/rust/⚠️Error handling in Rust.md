@@ -53,7 +53,39 @@ panic = 'abort' # Immediately abort the process (reduces binary size)
  RUST_BACKTRACE=1 cargo run
  ```
 
-### **3. Recoverable errors: `Result<T, E>` enumeration**
+### **3.  A very good example demonstrates error handling and displaying the contents of a text file.**
+
+```rust
+use std::fs::File;
+use std::io::Read;
+
+fn read_username_from_file() -> Result<String, std::io::Error> {
+    let f = File::open("/home/mbkchel/hello.txt");
+
+    let mut f = match f {
+        Ok(file) => file,
+        Err(e) => return Err(e),
+    };
+
+    let mut s = String::new();
+
+    let _ = match f.read_to_string(&mut s) {
+        Ok(_) => Ok(&s),
+        Err(e) => Err(e),
+    };
+
+    Ok(s)
+}
+
+fn main() {
+    match read_username_from_file() {
+        Ok(username) => println!("allright read: {}", username),
+        Err(error) => println!("Error: {}", error),
+    }
+}
+```
+
+### **4. Recoverable errors: `Result<T, E>` enumeration**
 
 If the error is expected (for example, the file was not found or the network has failed), `Result` is used:
 
@@ -66,7 +98,7 @@ Err(E), // An error occurred, returns error E
 }
 ```
 
-### **4. Operator `?` (Error Propagation)**
+### **5. Operator `?` (Error Propagation)**
 
 The `?` operator is a shorthand for passing an error further up the call stack. If a method returns `Err`, the `?` operator aborts the function and immediately returns this `Err`.
 

@@ -55,7 +55,39 @@ panic = 'abort' # Немедленный забор процесса (умень
 > RUST_BACKTRACE=1 cargo run
 > ```
 
-### **3. Восстановимые ошибки: перечисление `Result<T, E>`**
+### **3. Очень хороший пример с обработкой ошибок, вывода содержимого ткст файла**
+
+```rust
+use std::fs::File;
+use std::io::Read;
+
+fn read_username_from_file() -> Result<String, std::io::Error> {
+    let f = File::open("/home/mbkchel/hello.txt");
+
+    let mut f = match f {
+        Ok(file) => file,
+        Err(e) => return Err(e),
+    };
+
+    let mut s = String::new();
+
+    let _ = match f.read_to_string(&mut s) {
+        Ok(_) => Ok(&s),
+        Err(e) => Err(e),
+    };
+
+    Ok(s)
+}
+
+fn main() {
+    match read_username_from_file() {
+        Ok(username) => println!("allright read: {}", username),
+        Err(error) => println!("Error: {}", error),
+    }
+}
+```
+
+### **4. Восстановимые ошибки: перечисление `Result<T, E>`**
 
 Если ошибка ожидаема (например, файл не найден или сеть отвалилась), используется `Result`:
 
@@ -68,7 +100,7 @@ enum Result<T, E> {
 }
 ```
 
-### **4. Оператор `?` (Проброс ошибок / Error Propagation)**
+### **5. Оператор `?` (Проброс ошибок / Error Propagation)**
 
 Оператор `?` - это короткая запись для передачи ошибки выше по стеку вызовов. Если метод возвращает `Err`, оператор `?` прерывает выполнение функции и сразу возвращает этот `Err`.
 

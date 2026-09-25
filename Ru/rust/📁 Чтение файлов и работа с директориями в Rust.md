@@ -35,6 +35,38 @@ fn main() {
     println!("Прочитано байт: {}", bytes.len());
 }
 ```
+
+### Очень хороший пример с обработкой ошибок, вывода содержимого ткст файлам
+
+```rust
+use std::fs::File;
+use std::io::Read;
+
+fn read_username_from_file() -> Result<String, std::io::Error> {
+    let f = File::open("/home/mbkchel/hello.txt");
+
+    let mut f = match f {
+        Ok(file) => file,
+        Err(e) => return Err(e),
+    };
+
+    let mut s = String::new();
+
+    let _ = match f.read_to_string(&mut s) {
+        Ok(_) => Ok(&s),
+        Err(e) => Err(e),
+    };
+
+    Ok(s)
+}
+
+fn main() {
+    match read_username_from_file() {
+        Ok(username) => println!("allright read: {}", username),
+        Err(error) => println!("Error: {}", error),
+    }
+}
+```
 ## 2. Чтение ВСЕХ файлов в папочке (`fs::read_dir`)
 
 Функция `fs::read_dir` возвращает итератор по всем объектам внутри папки (файлы, подпапки, симлинки).
