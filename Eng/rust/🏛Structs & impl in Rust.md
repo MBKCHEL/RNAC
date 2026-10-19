@@ -50,7 +50,28 @@ email: String::from("yourexample@gmail.com"),
 ..user1 // All other fields (age, active) will be taken from user1!
 };
 ```
+#### 🔹 Reading a Variable from a Struct
 
+```rust
+#[derive(Debug)] // Allows printing the entire struct using {:?}
+struct Animal {
+    dog: String, // Defining a struct field
+}
+
+fn main() {
+    // Creating a specific object (instance) based on the Animal blueprint
+    let word = Animal { dog: String::from("dog barks") };
+
+    // Accessing a specific field of a specific object using a dot
+    println!("{}", word.dog); // Output: dog barks
+}
+
+```
+
+⚠️ Key Rule:
+
+- `Animal` is just the **type name** (the blueprint). You cannot get data directly via `Animal.dog` or `Animal::dog` because the blueprint itself doesn't store any data.
+- `word` is the **actual object** in memory. We use `word.dog` so the computer knows exactly which variable to pull the string from.
 ### 3. `impl` (Implementation) - Give the structure “Superpowers”
 
 Without `impl` the structure is just a bag of data. With `impl` we write **methods** (functions that belong to this structure).
