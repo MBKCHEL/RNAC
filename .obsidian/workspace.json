@@ -191,30 +191,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ru/rust/⚡ Rust Concurrency Многопоточность.md",
+                "file": "Eng/rust/📁 Reading files and working with directories in Rust.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "⚡ Rust Concurrency Многопоточность"
-            }
-          },
-          {
-            "id": "90d4ebc60b6285d9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Eng/rust/🏛Structs & impl in Rust.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "🏛Structs & impl in Rust"
+              "title": "📁 Reading files and working with directories in Rust"
             }
           }
         ],
-        "currentTab": 14
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -378,22 +364,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "90d4ebc60b6285d9",
+  "active": "94f294952c628c74",
   "lastOpenFiles": [
+    "Ru/rust/📁 Чтение файлов и работа с директориями в Rust.md",
     "Ru/rust/🏛Structs & impl в Rust.md",
+    "Eng/rust/📁 Reading files and working with directories in Rust.md",
+    "Ru/rust/⚠️Обработка ошибок в Rust.md",
+    "Ru/rust/⚡ Rust Concurrency Многопоточность.md",
+    "LICENSE.md",
+    "README.md",
+    "Eng/rust/🏛Structs & impl in Rust.md",
     "file:/home/mbkchel/SysPrint/README.md",
     "file:/home/mbkchel/SysPrint/LOGOS.md",
-    "README.md",
     "Ru/rust/✂️Срезы в Rust (Slice Type).md",
     "Ru/rust/⚙️! Макросы в Rust.md",
-    "Ru/rust/📁 Чтение файлов и работа с директориями в Rust.md",
-    "Ru/rust/⚠️Обработка ошибок в Rust.md",
     "Ru/rust/⚡️Функции в Rust.md",
     "Ru/rust/📝Модификация строк через push_str в Rust.md",
     "Ru/rust/📌Переменные в Rust.md",
     "Ru/rust/🐙GIt commands.md",
     "Ru/rust/❓Option<T>, Some и None в Rust.md",
-    "Ru/rust/⚡ Rust Concurrency Многопоточность.md",
     "Ru/rust/📚Стек (Stack) vs Куча (Heap).md",
     "Ru/rust/📦Блоки-Выражения (Block Expressions) в RUst.md",
     "Ru/rust/📦Всё о Cargo и всё о rustup Rust.md",
@@ -403,9 +392,6 @@
     "Eng/rust/⚡ Rust Concurrency & Multithreading Cheat Sheet.md",
     "Eng/rust/🧩Modular system and file separation in Rust.md",
     "Eng/rust/🧠Memory management in Rust (Ownership & Borrowing).md",
-    "Eng/rust/🛠️ Useful functions in Rust.md",
-    "Eng/rust/🧩 Traits in Rust.md",
-    "Ru/rust/🧩 Traits (Трейты) в Rust.md",
     "Eng/rust/Pasted image 20260723124517.png",
     "Eng/rust",
     "Eng/FileSystem",

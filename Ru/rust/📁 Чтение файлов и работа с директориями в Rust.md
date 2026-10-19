@@ -70,6 +70,46 @@ fn main() {
 ## 2. Чтение ВСЕХ файлов в папочке (`fs::read_dir`)
 
 Функция `fs::read_dir` возвращает итератор по всем объектам внутри папки (файлы, подпапки, симлинки).
+Поскольку папка может быть недоступна (нет прав, удалили в процессе) или какой-то файл внутри поврежден, каждый элемент в этом итераторе — это `Result<DirEntry, io::Error>`.
+```rust
+use std::env;
+use std::fs;
+use std::path::PathBuf;
+
+/// Кроссплатформенно получаем путь ~/SysPMF (или C:\Users\<Юзер>\SysPMF)
+fn get_app_dir() -> PathBuf {
+    let home = if cfg!(unix) {
+        env::var("HOME").unwrap_or_else(|_| "/tmp".into())
+    } else if cfg!(windows) {
+        env::var("USERPROFILE").unwrap_or_else(|_| r"C:\".into())
+    } else {
+        ".".to_string()
+    };
+
+    PathBuf::from(home).join("SysPMF") // можно написать PathBuf::from(home).join("SysPMF").join("Имба плейлист") и откроеться именно эта директория
+}
+
+fn main() {
+    let dir_path = get_app_dir();
+
+    // 1. Автоматическая кросс-генерация папки, если её ещё нет
+    if !dir_path.exists() {
+        println!("Папка {:?} не найдена, создаём...", dir_path);
+        fs::create_dir_all(&dir_path).expect("Не удалось создать директорию");
+    }
+
+    // 2. Чтение файлов из папки
+    let entries = fs::read_dir(&dir_path).expect("Не удалось открыть директорию");
+
+    println!("--- Содержимое папки {:?} ---", dir_path);
+
+    // Юзаем .flatten(), чтобы отсеять ошибки чтения отдельных файлов
+    for entry in entries.flatten() {
+        let path = entry.path();
+        println!("Найден объект: {:?}", path);
+    }
+}
+```
 
 ### 3. Создание папки если её нету, чтение всех элементов в ней, кроссплатформенность
 

@@ -68,7 +68,52 @@ fn main() {
 ```
 ## 2. Read ALL files in the folder (`fs::read_dir`)
 
-The `fs::read_dir` function returns an iterator over all objects inside a folder (files, subfolders, symlinks).
+2. Reading ALL files in a folder (`fs::read_dir`)
+    
+    The `fs::read_dir` function returns an iterator over all items inside a folder (files, subfolders, symlinks).
+    
+
+Since the folder might be inaccessible (no permissions, deleted during execution) or some file inside is corrupted, each element in this iterator is a `Result<DirEntry, io::Error>`.
+
+```Rust
+use std::env;
+use std::fs;
+use std::path::PathBuf;
+
+/// Cross-platform retrieval of the ~/SysPMF path (or C:\Users\<User>\SysPMF)
+fn get_app_dir() -> PathBuf {
+    let home = if cfg!(unix) {
+        env::var("HOME").unwrap_or_else(|_| "/tmp".into())
+    } else if cfg!(windows) {
+        env::var("USERPROFILE").unwrap_or_else(|_| r"C:\".into())
+    } else {
+        ".".to_string()
+    };
+
+    PathBuf::from(home).join("SysPMF") // you can write PathBuf::from(home).join("SysPMF").join("Imba Playlist") to open that specific directory
+}
+
+fn main() {
+    let dir_path = get_app_dir();
+
+    // 1. Automatic cross-generation of the folder if it doesn't exist yet
+    if !dir_path.exists() {
+        println!("Folder {:?} not found, creating...", dir_path);
+        fs::create_dir_all(&dir_path).expect("Failed to create directory");
+    }
+
+    // 2. Reading files from the folder
+    let entries = fs::read_dir(&dir_path).expect("Failed to open directory");
+
+    println!("--- Contents of folder {:?} ---", dir_path);
+
+    // Use .flatten() to filter out individual file reading errors
+    for entry in entries.flatten() {
+        let path = entry.path();
+        println!("Found object: {:?}", path);
+    }
+}
+```
 
 ### 3. Creating a folder if it doesn’t exist, reading all the elements in it, cross-platform
 
