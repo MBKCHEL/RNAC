@@ -8,15 +8,11 @@ The `panic!` macro forces the program to stop executing, print an error message,
 
 - **Direct macro call:**
 
-
-
 ```Rust
 panic!("Everything burned!"); // Terminates the program with this message
 ```
 
 - **Automatic panic (for example, going beyond array boundaries):**
-
-
 
 ```Rust
 years in = all!yu1, 2, 3sch;
@@ -24,8 +20,6 @@ v[99]; // Causes panic! (buffer overflow / out of bounds protection)
 ```
 
 - **Unwrapping `Option` / `Result` via `.unwrap()` and `.expect()`:**
-
-
 
 ```Rust
 let f = File::open("hello.txt").unwrap();
@@ -39,8 +33,6 @@ let f = File::open("hello.txt").expect("Failed to open file");
 ### **2. Setting behavior for `panic!`**
 
 By default, when panicked, Rust does **unwinding** (stack unwinding): it goes backward through functions and clears memory. This can be changed in `Cargo.toml`:
-
-,
 
 ```TOML
 [profile.release]

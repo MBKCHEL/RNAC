@@ -205,12 +205,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Ru/rust/📁 Чтение файлов и работа с директориями в Rust.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "📁 Чтение файлов и работа с директориями в Rust"
             }
           }
         ],
@@ -380,6 +380,15 @@
   },
   "active": "82f80ccbb0d9bd1e",
   "lastOpenFiles": [
+    "Ru/rust/📚Стек (Stack) vs Куча (Heap).md",
+    "Ru/rust/❓Option<T>, Some и None в Rust.md",
+    "Ru/rust/✂️Срезы в Rust (Slice Type).md",
+    "Ru/rust/⚠️Обработка ошибок в Rust.md",
+    "Eng/rust/❓Option<T>, Some and None in Rust.md",
+    "Eng/rust/⚠️Error handling in Rust.md",
+    "file:/home/mbkchel/Projects/SysPrint/README.md",
+    "file:/home/mbkchel/Projects/SysPrint/READMEru.md",
+    "README.md",
     "Eng/Crates/Random/🎲 The rand Crate - The Wheel of Fortune.md",
     "Ru/Crates/Random/🎲 Крейт rand - Колесо Фортуны.md",
     "Ru/rust/🧠Управление памятью в Rust (Ownership & Borrowing).md",
@@ -404,18 +413,9 @@
     "Ru/Crates/Audio",
     "Ru/Crates",
     "Ru/rust/🏛Structs & impl в Rust.md",
-    "Ru/rust/❓Option<T>, Some и None в Rust.md",
     "Ru/rust/⚡ HashMap в Rust.md",
     "Ru/rust/⚡ Rust Concurrency Многопоточность.md",
-    "Ru/rust/✂️Срезы в Rust (Slice Type).md",
     "Ru/rust/⚡️Функции в Rust.md",
-    "Ru/rust/🧬Векторы в Rust Vec.md",
-    "Ru/rust/🧮Массивы в языке Rust.md",
-    "Ru/rust/📁 Чтение файлов и работа с директориями в Rust.md",
-    "Ru/rust/🧩Модульная система и разделение на файлы в Rust.md",
-    "Ru/rust/🛠️ Текстовые буферы в Rust.md",
-    "Ru/rust/🛠️ Полезные функции в Rust.md",
-    "Ru/rust/🧱Кортежи в языке Rust.md",
     "Eng/rust/Pasted image 20260723124517.png",
     "Ru/rust/Pasted image 20260723124517.png",
     "rust/Pasted image 20260723124517.png",
