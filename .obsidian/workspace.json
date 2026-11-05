@@ -212,9 +212,23 @@
               "icon": "lucide-file",
               "title": "Установка программ (пакетов)"
             }
+          },
+          {
+            "id": "c906398a5b0fdf02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Eng/Commands/Install programs (packages).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Install programs (packages)"
+            }
           }
         ],
-        "currentTab": 14
+        "currentTab": 15
       }
     ],
     "direction": "vertical"
@@ -378,10 +392,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "3d78edb45c33c696",
+  "active": "c906398a5b0fdf02",
   "lastOpenFiles": [
-    "Rust programming language/Ru/rust/📦Всё о Cargo и всё о rustup Rust.md",
     "Linux/Ru/Commands/Установка программ (пакетов).md",
+    "Linux/Eng/Commands/Install programs (packages).md",
+    "Linux/shared/packages.md",
+    "Linux/shared",
+    "Rust programming language/Ru/rust/📦Всё о Cargo и всё о rustup Rust.md",
     "Linux/Eng/System",
     "Linux/Eng/Commands",
     "Linux/Ru/System",
@@ -412,11 +429,8 @@
     "Rust programming language/Ru/rust/🔒Константы в языке Rust.md",
     "Rust programming language/Ru/rust/🔄 Итераторы в Rust (Iterator).md",
     "Rust programming language/Ru/rust/🔁Все циклы в Rust (loop, while, for).md",
-    "Rust programming language/Ru/rust/🔀Конвертация типов в Rust (Option, Result, числа и типы).md",
-    "Rust programming language/Ru/rust/🔀Else-if в Rust.md",
     "Rust programming language/Ru/rust/Pasted image 20260723124517.png",
     "Rust programming language/Ru/Crates/Random",
-    "Rust programming language/Ru/Crates/FileSystem",
     "Rust programming language/Eng/rust/Pasted image 20260723124517.png",
     "Eng/rust/Pasted image 20260723124517.png",
     "Ru/rust/Pasted image 20260723124517.png",
