@@ -10,28 +10,28 @@
 
 ## Table of contents
 
-|Category|Managers|
-|---|---|
-|Arch family|[pacman](#pacman) · [yay](#yay) · [paru](#paru)|
-|Debian family|[apt](#apt) · [dpkg](#dpkg)|
-|Red Hat family|[dnf](#dnf) · [yum](#yum) · [rpm](#rpm)|
-|SUSE|[zypper](#zypper)|
-|Mandriva / Mageia|[urpmi](#urpmi)|
-|PLD|[poldek](#poldek)|
-|Void|[xbps](#xbps)|
-|Gentoo|[emerge](#emerge)|
-|Alpine|[apk](#apk)|
-|Slackware family|[slackpkg](#slackpkg) · [slapt-get](#slapt-get) · [swaret](#swaret) · [netpkg](#netpkg)|
-|Solus / Pardus|[eopkg](#eopkg) · [pisi](#pisi)|
-|Source-based minimalist|[kiss](#kiss) · [cpt](#cpt)|
-|Tiny Core|[tce](#tce)|
-|Foresight|[conary](#conary)|
-|Clear Linux|[swupd](#swupd)|
-|BSD|[pkgsrc](#pkgsrc) · [ports](#ports)|
-|Functional / declarative|[nix](#nix) · [guix](#guix)|
-|Universal (sandboxed apps)|[flatpak](#flatpak) · [snap](#snap)|
-|Language ecosystems|[cargo](#cargo) · [pip](#pip) · [npm](#npm) · [yarn](#yarn) · [pnpm](#pnpm) · [gem](#gem) · [composer](#composer)|
-|Unclear|[upkg](#upkg)|
+| Category                   | Managers                                                                                                          |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Arch family                | [pacman](#pacman) · [yay](#yay) · [paru](#paru)                                                                   |
+| Debian family              | [apt](#apt) · [dpkg](#dpkg)                                                                                       |
+| Red Hat family             | [dnf](#dnf) · [yum](#yum) · [rpm](#rpm)                                                                           |
+| SUSE                       | [zypper](#zypper)                                                                                                 |
+| Mandriva / Mageia          | [urpmi](#urpmi)                                                                                                   |
+| PLD                        | [poldek](#poldek)                                                                                                 |
+| Void                       | [xbps](#xbps)                                                                                                     |
+| Gentoo                     | [emerge](#emerge)                                                                                                 |
+| Alpine                     | [apk](#apk)                                                                                                       |
+| Slackware family           | [slackpkg](#slackpkg) · [slapt-get](#slapt-get) · [swaret](#swaret) · [netpkg](#netpkg)                           |
+| Solus / Pardus             | [eopkg](#eopkg) · [pisi](#pisi)                                                                                   |
+| Source-based minimalist    | [kiss](#kiss) · [cpt](#cpt)                                                                                       |
+| Tiny Core                  | [tce](#tce)                                                                                                       |
+| Foresight                  | [conary](#conary)                                                                                                 |
+| Clear Linux                | [swupd](#swupd)                                                                                                   |
+| BSD                        | [pkgsrc](#pkgsrc) · [ports](#ports)                                                                               |
+| Functional / declarative   | [nix](#nix) · [guix](#guix)                                                                                       |
+| Universal (sandboxed apps) | [flatpak](#flatpak) · [snap](#snap)                                                                               |
+| Language ecosystems        | [cargo](#cargo) · [pip](#pip) · [npm](#npm) · [yarn](#yarn) · [pnpm](#pnpm) · [gem](#gem) · [composer](#composer) |
+| Unclear                    | [upkg](#upkg)                                                                                                     |
 
 ---
 

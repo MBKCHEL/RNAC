@@ -219,12 +219,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Eng/Commands/Install programs (packages).md",
+                "file": "Linux/shared/distros.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Install programs (packages)"
+              "title": "distros"
             }
           }
         ],
@@ -394,9 +394,13 @@
   },
   "active": "c906398a5b0fdf02",
   "lastOpenFiles": [
-    "Linux/Ru/Commands/Установка программ (пакетов).md",
-    "Linux/Eng/Commands/Install programs (packages).md",
+    "arch-family.md",
+    "Linux/shared/distros.md",
+    "Arch-family.md",
+    "Aarch-family.md",
     "Linux/shared/packages.md",
+    "Linux/Eng/Commands/Install programs (packages).md",
+    "Linux/Ru/Commands/Установка программ (пакетов).md",
     "Linux/shared",
     "Rust programming language/Ru/rust/📦Всё о Cargo и всё о rustup Rust.md",
     "Linux/Eng/System",
@@ -425,10 +429,6 @@
     "Rust programming language/Ru/rust/🧩 Traits (Трейты) в Rust.md",
     "Rust programming language/Ru/rust/🧠Управление памятью в Rust (Ownership & Borrowing).md",
     "Rust programming language/Ru/rust/🛠️ Полезные функции в Rust.md",
-    "Rust programming language/Ru/rust/🖥 Rust - Вывод текста через println!.md",
-    "Rust programming language/Ru/rust/🔒Константы в языке Rust.md",
-    "Rust programming language/Ru/rust/🔄 Итераторы в Rust (Iterator).md",
-    "Rust programming language/Ru/rust/🔁Все циклы в Rust (loop, while, for).md",
     "Rust programming language/Ru/rust/Pasted image 20260723124517.png",
     "Rust programming language/Ru/Crates/Random",
     "Rust programming language/Eng/rust/Pasted image 20260723124517.png",
