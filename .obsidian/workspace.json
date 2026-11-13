@@ -233,16 +233,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rust programming language/Eng/rust/📝 Formatting - format!, write! and output templates.md",
+                "file": "Rust programming language/Ru/rust/📝 Форматирование - format!, write! и шаблоны вывода.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "📝 Formatting - format!, write! and output templates"
+              "title": "📝 Форматирование - format!, write! и шаблоны вывода"
+            }
+          },
+          {
+            "id": "f38f2c5da1d0131f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Ru/Commands/Перенаправление ввода-вывода в Linux.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Перенаправление ввода-вывода в Linux"
+            }
+          },
+          {
+            "id": "240f2edc6f118769",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Eng/Commands/Input Output Redirection in Linux.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Input Output Redirection in Linux"
             }
           }
         ],
-        "currentTab": 16
+        "currentTab": 18
       }
     ],
     "direction": "vertical"
@@ -406,12 +434,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "ebeaff461297cadd",
+  "active": "2035557946eb3cdc",
   "lastOpenFiles": [
-    "Rust programming language/Eng/rust/⚠️Error handling in Rust.md",
-    "Rust programming language/Eng/rust/📝 Formatting - format!, write! and output templates.md",
-    "Rust programming language/Eng/rust/⚙️! Macros in Rust.md",
+    "Linux/Ru/Commands/Перенаправление ввода-вывода в Linux.md",
+    "Linux/Ru/Commands/Установка программ (пакетов).md",
+    "Linux/Eng/Commands/Input Output Redirection in Linux.md",
+    "echo.md",
     "Rust programming language/Ru/rust/📝 Форматирование - format!, write! и шаблоны вывода.md",
+    "Rust programming language/Ru/rust/📝Модификация строк через push_str в Rust.md",
+    "Rust programming language/Eng/rust/📝 Formatting - format!, write! and output templates.md",
+    "Rust programming language/Eng/rust/⚠️Error handling in Rust.md",
+    "Rust programming language/Eng/rust/⚙️! Macros in Rust.md",
     "Rust programming language/Ru/rust/❓Option<T>, Some и None в Rust.md",
     "Rust programming language/Ru/rust/⚠️Обработка ошибок в Rust.md",
     "Rust programming language/Ru/rust/⚙️! Макросы в Rust.md",
@@ -424,7 +457,6 @@
     "⚙️!",
     "⚙️!.md",
     "Linux/Eng/Commands/Install programs (packages).md",
-    "Rust programming language/Ru/rust/📝Модификация строк через push_str в Rust.md",
     "Rust programming language/Ru/rust/🔀Else-if в Rust.md",
     "Rust programming language/Ru/rust/⚡ Rust Concurrency Многопоточность.md",
     "Rust programming language/Ru/rust/⚡️Функции в Rust.md",
@@ -433,17 +465,13 @@
     "arch-family.md",
     "Arch-family.md",
     "Aarch-family.md",
-    "Linux/shared/packages.md",
-    "Linux/Ru/Commands/Установка программ (пакетов).md",
     "Linux/shared",
-    "Rust programming language/Ru/rust/📦Всё о Cargo и всё о rustup Rust.md",
     "Linux/Eng/System",
     "Linux/Eng/Commands",
     "Linux/Ru/System",
     "Linux/Ru/Commands",
     "Linux/Ru",
     "Linux/Eng",
-    "Rust programming language/Ru/rust/🐙GIt commands.md",
     "Rust programming language/Ru/rust/Pasted image 20260723124517.png",
     "Rust programming language/Eng/rust/Pasted image 20260723124517.png",
     "Eng/rust/Pasted image 20260723124517.png",
