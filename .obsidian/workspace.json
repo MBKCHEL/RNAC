@@ -261,12 +261,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Eng/Commands/Input Output Redirection in Linux.md",
+                "file": "READMEru.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Input Output Redirection in Linux"
+              "title": "READMEru"
             }
           }
         ],
@@ -434,12 +434,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "2035557946eb3cdc",
+  "active": "240f2edc6f118769",
   "lastOpenFiles": [
+    "README.md",
     "READMEru.md",
+    "README_RU.md",
+    "Linux/Eng/Commands/Input Output Redirection in Linux.md",
     "Linux/Ru/Commands/Перенаправление ввода-вывода в Linux.md",
     "Linux/Ru/Commands/Установка программ (пакетов).md",
-    "Linux/Eng/Commands/Input Output Redirection in Linux.md",
     "echo.md",
     "Rust programming language/Ru/rust/📝 Форматирование - format!, write! и шаблоны вывода.md",
     "Rust programming language/Ru/rust/📝Модификация строк через push_str в Rust.md",
@@ -463,8 +465,6 @@
     "Rust programming language/Ru/rust/⚡️Функции в Rust.md",
     "Rust programming language/Ru/rust/🛠️ Текстовые буферы в Rust.md",
     "Linux/shared/distros.md",
-    "arch-family.md",
-    "Arch-family.md",
     "Linux/shared",
     "Linux/Eng/System",
     "Linux/Eng/Commands",
