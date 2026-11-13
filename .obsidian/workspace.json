@@ -436,6 +436,7 @@
   },
   "active": "2035557946eb3cdc",
   "lastOpenFiles": [
+    "READMEru.md",
     "Linux/Ru/Commands/Перенаправление ввода-вывода в Linux.md",
     "Linux/Ru/Commands/Установка программ (пакетов).md",
     "Linux/Eng/Commands/Input Output Redirection in Linux.md",
@@ -464,7 +465,6 @@
     "Linux/shared/distros.md",
     "arch-family.md",
     "Arch-family.md",
-    "Aarch-family.md",
     "Linux/shared",
     "Linux/Eng/System",
     "Linux/Eng/Commands",
