@@ -1,5 +1,7 @@
 `println!` (print line) is the main tool for outputting text to the console (terminal) with automatic line breaking at the end.
 
+> 📚 **If you don't know what macros are and why there is a `!` at the end, check out the file:** [[⚙️! Macros in Rust|Click here!]]
+
 ### ⚠️ The exclamation point `!` is important!
 
 The `!` symbol at the end means that this is **not a regular function (method), but a MACRO**.

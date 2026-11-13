@@ -135,12 +135,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rust/❓Option<T>, Some и None в Rust.md",
+                "file": "Rust programming language/Ru/rust/⚠️Обработка ошибок в Rust.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "❓Option<T>, Some и None в Rust"
+              "title": "⚠️Обработка ошибок в Rust"
             }
           },
           {
@@ -219,16 +219,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/shared/distros.md",
+                "file": "Rust programming language/Ru/rust/🔀Else-if в Rust.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "distros"
+              "title": "🔀Else-if в Rust"
+            }
+          },
+          {
+            "id": "ebeaff461297cadd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Rust programming language/Eng/rust/📝 Formatting - format!, write! and output templates.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📝 Formatting - format!, write! and output templates"
             }
           }
         ],
-        "currentTab": 15
+        "currentTab": 16
       }
     ],
     "direction": "vertical"
@@ -392,14 +406,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "c906398a5b0fdf02",
+  "active": "ebeaff461297cadd",
   "lastOpenFiles": [
-    "arch-family.md",
+    "Rust programming language/Eng/rust/⚠️Error handling in Rust.md",
+    "Rust programming language/Eng/rust/📝 Formatting - format!, write! and output templates.md",
+    "Rust programming language/Eng/rust/⚙️! Macros in Rust.md",
+    "Rust programming language/Ru/rust/📝 Форматирование - format!, write! и шаблоны вывода.md",
+    "Rust programming language/Ru/rust/❓Option<T>, Some и None в Rust.md",
+    "Rust programming language/Ru/rust/⚠️Обработка ошибок в Rust.md",
+    "Rust programming language/Ru/rust/⚙️! Макросы в Rust.md",
+    "Rust programming language/Eng/rust/❓Option<T>, Some and None in Rust.md",
+    "Rust programming language/Eng/rust/🖥 Rust - Text output via println!.md",
+    "Rust programming language/Ru/rust/🖥 Rust - Вывод текста через println!.md",
+    "⚙️!/Макросы/в/Rust.md",
+    "⚙️!/Макросы/в",
+    "⚙️!/Макросы",
+    "⚙️!",
+    "⚙️!.md",
+    "Linux/Eng/Commands/Install programs (packages).md",
+    "Rust programming language/Ru/rust/📝Модификация строк через push_str в Rust.md",
+    "Rust programming language/Ru/rust/🔀Else-if в Rust.md",
+    "Rust programming language/Ru/rust/⚡ Rust Concurrency Многопоточность.md",
+    "Rust programming language/Ru/rust/⚡️Функции в Rust.md",
+    "Rust programming language/Ru/rust/🛠️ Текстовые буферы в Rust.md",
     "Linux/shared/distros.md",
+    "arch-family.md",
     "Arch-family.md",
     "Aarch-family.md",
     "Linux/shared/packages.md",
-    "Linux/Eng/Commands/Install programs (packages).md",
     "Linux/Ru/Commands/Установка программ (пакетов).md",
     "Linux/shared",
     "Rust programming language/Ru/rust/📦Всё о Cargo и всё о rustup Rust.md",
@@ -409,28 +443,8 @@
     "Linux/Ru/Commands",
     "Linux/Ru",
     "Linux/Eng",
-    "Linux",
-    "Linu",
-    "Rust programming language/Ru/rust/🛠️ Текстовые буферы в Rust.md",
     "Rust programming language/Ru/rust/🐙GIt commands.md",
-    "README.md",
-    "Rust programming language/Ru/rust/❓Option<T>, Some и None в Rust.md",
-    "Ru/rust/🧠Управление памятью в Rust (Ownership & Borrowing).md",
-    "Rust programming language/Ru/Crates/Random/🎲 Крейт rand - Колесо Фортуны.md",
-    "Rust programming language/Ru/Crates/FileSystem/📁WalkDir - крейт для обхода файловой системы.md",
-    "Rust programming language/Ru/Crates/FileSystem/📁 Dirs - крейт на системные пути в Rust.md",
-    "Rust programming language/Ru/Crates/FileSystem/📁 Directories - крейт для системных путей.md",
-    "Rust programming language/Ru/Crates/CLI terminal/🐀Крейт Ratatui для CLI и терминала.md",
-    "Rust programming language/Ru/Crates/Audio/🎧Rodio - крейт воспроизведение звука в Rust.md",
-    "Rust programming language/Ru/rust/🧱Кортежи в языке Rust.md",
-    "Rust programming language/Ru/rust/🧮Массивы в языке Rust.md",
-    "Rust programming language/Ru/rust/🧬Векторы в Rust Vec.md",
-    "Rust programming language/Ru/rust/🧩Модульная система и разделение на файлы в Rust.md",
-    "Rust programming language/Ru/rust/🧩 Traits (Трейты) в Rust.md",
-    "Rust programming language/Ru/rust/🧠Управление памятью в Rust (Ownership & Borrowing).md",
-    "Rust programming language/Ru/rust/🛠️ Полезные функции в Rust.md",
     "Rust programming language/Ru/rust/Pasted image 20260723124517.png",
-    "Rust programming language/Ru/Crates/Random",
     "Rust programming language/Eng/rust/Pasted image 20260723124517.png",
     "Eng/rust/Pasted image 20260723124517.png",
     "Ru/rust/Pasted image 20260723124517.png",
