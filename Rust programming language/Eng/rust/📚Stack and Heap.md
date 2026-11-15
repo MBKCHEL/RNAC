@@ -65,7 +65,7 @@ This is where the magic of Rust brings everything together:
 
 |**Parameter**|**Stack**|**Heap**|
 |---|---|---|
-|**Speed**|🚀 Very Fast|🐢 Slower|
+|**Speed**| Very Fast| Slower|
 |**Data size**|Fixed at compilation|Can change on the fly|
 |**Access**|Directly|By index (link)|
 |**Examples**|`i32`, `bool`, `&str`|`String`, `Vec<T>`|

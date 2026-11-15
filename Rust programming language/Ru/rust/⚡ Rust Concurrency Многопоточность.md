@@ -78,7 +78,7 @@ fn scan_disk_space() -> u64 {
 }
 
 fn main() {
-    println!("🚀 Запускаем задачи в параллельных потоках...");
+    println!(" Запускаем задачи в параллельных потоках...");
 
     // Запускаем каждую функцию в своем фоновом потоке
     let handle_logs = thread::spawn(|| {
@@ -99,7 +99,7 @@ fn main() {
     let cpu_load = handle_cpu.join().unwrap();
     let free_space = handle_disk.join().unwrap();
 
-    println!("\n✅ Все задачи выполнены!");
+    println!("\n Все задачи выполнены!");
     println!("Найдено ошибок в логах: {}", log_errors);
     println!("Загрузка CPU: {}%", cpu_load);
     println!("Свободно места на диске: {} байт", free_space);

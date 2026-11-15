@@ -117,8 +117,8 @@ fn main() {
     let likes_rust = input.trim().to_lowercase().parse::<bool>().unwrap();
 
     match likes_rust {
-        true => println!("Наш человек! 🦾 🦀"),
-        false => println!("Ничего, скоро полюбишь. 😉"),
+        true => println!("Наш человек!  "),
+        false => println!("Ничего, скоро полюбишь. "),
     }
 }
 ```
@@ -153,6 +153,6 @@ let result: i16 = num1 + (num2 as i16);
     
 4. **Конвертация (Вариант 1 - Затенение с типом слева):** `let input: u32 = input.trim().parse().unwrap();`
     
-5. **Конвертация (Вариант 2 - Стиль Turbofish 🐟):** `let input = input.trim().parse::<u32>().unwrap();`
+5. **Конвертация (Вариант 2 - Стиль Turbofish ):** `let input = input.trim().parse::<u32>().unwrap();`
     
-6. **Кастинг чисел:** Приводим через `as` только снизу вверх (`u8` ➔ `u16` ➔ `i32`).
+6. **Кастинг чисел:** Приводим через `as` только снизу вверх (`u8`  `u16`  `i32`).

@@ -24,7 +24,7 @@ In Rust there are two similar methods for strings, do not confuse them in the co
 
 - **`.push_str("Text")`** - adds a whole **string slice** (text in double quotes).
 
-- **`.push('🪓')`** - adds only **one single character** (delimited strictly by SINGLE quotes `' '`).
+- **`.push('')`** - adds only **one single character** (delimited strictly by SINGLE quotes `' '`).
 
 
 

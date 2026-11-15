@@ -8,7 +8,7 @@ In Rust, the curly braces `{ ... }` are not just a code separator, but an **expr
 let result = {
 let a = 10;
 let b = 20;
-a + b // 👈 NO semicolon! The block will return 30
+a + b //  NO semicolon! The block will return 30
 };
 
 println!("{result}"); // Prints 30
@@ -39,7 +39,7 @@ println!("The value of y is: {}", y);
 
 
 ```Rust
-// ❌ Logic error (forgot to remove ';'):
+//  Logic error (forgot to remove ';'):
 let result = {
 let a = 10;
 a + 5; // Put ';'! Now result is () instead of 15
@@ -62,10 +62,10 @@ let crit_multiplier = 2;
 base * crit multiplier
 };
 
-// ❌ Here `base` and `crit_multiplier` NO LONGER EXIST!
+//  Here `base` and `crit_multiplier` NO LONGER EXIST!
 // println!("{base}"); // Compilation error!
 
-// ✅ Only pure result is available:
+//  Only pure result is available:
 println!("Damage: {final_damage}"); // 100
 }
 ```

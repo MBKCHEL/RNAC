@@ -85,7 +85,7 @@ use ratatui::widgets::{Block, Borders, BorderType};
 use ratatui::style::{Style, Color};
 
 let block = Block::default()
-    .title(" 🎵 SysPMF ")
+    .title("  SysPMF ")
     .borders(Borders::ALL)
     .border_type(BorderType::Rounded) // Rounded corners
     .style(Style::default().fg(Color::Cyan));

@@ -1,4 +1,4 @@
-🌐 **Язык:** [English](README.md) | [Русский](README_RU.md)
+ **Язык:** [English](README.md) | [Русский](README_RU.md)
 
 ---
 

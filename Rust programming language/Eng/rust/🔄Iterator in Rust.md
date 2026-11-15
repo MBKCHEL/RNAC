@@ -16,7 +16,7 @@ Depending on what you need to do with the data:
 3. **`into_iter()`** - **takes possession** (`T`). The array or vector is then destroyed (moved).
 
 
-> 💡 When you write `for element in help_print`, Rust automatically calls `.into_iter()` or `.iter()` under the hood.
+>  When you write `for element in help_print`, Rust automatically calls `.into_iter()` or `.iter()` under the hood.
 
 ## ⚡️ Basic Example
 

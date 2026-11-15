@@ -37,7 +37,7 @@ fn plus_one(x: i32) -> i32 {
 x + 1 // No ';' - means this expression, the function will return x + 1
 }
 
-// ❌ TYPICAL ERROR:
+//  TYPICAL ERROR:
 fn plus_one_broken(x: i32) -> i32 {
 x + 1; // Put ';' - turned into instructions! The function now returns nothing (unit type `()`).
 }
@@ -77,7 +77,7 @@ fn main() {
 let my_str = String::from("Hello");
 print_message(my_str); // Give the variable
 
-// ❌ ERROR! my_str no longer exists, it was given away by the function above!
+//  ERROR! my_str no longer exists, it was given away by the function above!
 // println!("{my_str}");
 }
 ```
@@ -97,7 +97,7 @@ fn main() {
 let my_str = String::from("Hi, Rast!");
 print_length(&my_str); // Pass the link using `&`
 
-// ✅ EVERYTHING IS OK! The variable remained alive in main()
+//  EVERYTHING IS OK! The variable remained alive in main()
 println!("The line is still here: {my_str}");
 }
 ```
@@ -116,7 +116,7 @@ let mut my_str = String::from("Hello");
 
 add_exclamation(&mut my_str); // Pass a mutable reference `&mut`
 
-// ✅ The result has changed right inside my_str!
+//  The result has changed right inside my_str!
 println!("{my_str}"); // Prints: "Hello!!!"
 }
 ```

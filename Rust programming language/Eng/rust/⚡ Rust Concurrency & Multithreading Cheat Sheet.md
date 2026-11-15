@@ -80,7 +80,7 @@ fn scan_disk_space() -> u64 {
 }
 
 fn main() {
-    println!("🚀 Launching tasks in parallel threads...");
+    println!(" Launching tasks in parallel threads...");
 
     // Spawn each function in its own background thread
     let handle_logs = thread::spawn(|| {
@@ -101,7 +101,7 @@ fn main() {
     let cpu_load = handle_cpu.join().unwrap();
     let free_space = handle_disk.join().unwrap();
 
-    println!("\n✅ All tasks completed!");
+    println!("\n All tasks completed!");
     println!("Log errors found: {}", log_errors);
     println!("CPU Load: {}%", cpu_load);
     println!("Free disk space: {} bytes", free_space);

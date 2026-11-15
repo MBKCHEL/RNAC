@@ -129,7 +129,7 @@ fn main() {
 }
 ```
 
-💡 Quick Cheat Sheet
+ Quick Cheat Sheet
 
 - **`trait Name { ... }`** - declare an interface.
 - **`impl Name for Type { ... }`** - implement the interface for a struct.

@@ -1,6 +1,6 @@
 ### 📝 `format!` and `write!`: building text from pieces
 
-> 📚 **If you don’t know what macros are and why there’s a `!` at the end, check this file:** [[⚙️! Macros in Rust|Click here!]]
+>  **If you don’t know what macros are and why there’s a `!` at the end, check this file:** [[️! Macros in Rust|Click here!]]
 
 #### ❓ 1. What problem do these macros solve
 
@@ -67,7 +67,7 @@ fn main() {
 }
 ```
 
-> ⚠️ **TRAP:** Inside the `{}` itself you can write **only a name**. The line `format!("{a + b}")` will not compile. An expression (`a + b`) is passed after the comma, or computed beforehand into a separate variable.
+> ️ **TRAP:** Inside the `{}` itself you can write **only a name**. The line `format!("{a + b}")` will not compile. An expression (`a + b`) is passed after the comma, or computed beforehand into a separate variable.
 
 ##### 📦 `format!` doesn’t take your variables
 
@@ -407,7 +407,7 @@ If you ignore the result, the compiler gives a warning, `unused Result that must
 - **`.unwrap()`**: “if there’s an error, crash the program”. For writing into a `String` this is safe, because writing into a string in memory doesn’t fail.
 - **`?`**: “if there’s an error, immediately exit the function and return that error upward”. Works only in a function that itself returns a `Result`. This is how it’s usually written for files.
 - **`let _ = write!(...);`**: “I don’t care whether it worked or not”.
-- *More details in the file*: [[⚠️Error handling in Rust|Click here!]]
+- *More details in the file*: [[️Error handling in Rust|Click here!]]
 
 ##### 🔁 4.3. Why write into a `String` if there’s `format!`
 
@@ -479,7 +479,7 @@ fn main() -> std::io::Result<()> {
 }
 ```
 
-> ⚠️ **TRAP:** Both traits are called `Write`. If you need both in one file, you’ll get a name conflict. The fix: import one of them under a different name:
+> ️ **TRAP:** Both traits are called `Write`. If you need both in one file, you’ll get a name conflict. The fix: import one of them under a different name:
 
 ```Rust
 use std::fmt::Write as FmtWrite;
@@ -524,7 +524,7 @@ fn main() {
 
 After this, `Point` can do everything: it works in `println!("{p}")`, in `format!("{p}")`, and even gets the `p.to_string()` method for free.
 
-> ⚠️ **Nuance:** width and alignment (`{p:>10}`) **won’t work on their own** for your type as long as you just use `write!` inside `fmt`. To make them work you need to use `f.pad(...)`, but that’s a topic for an advanced note.
+> ️ **Nuance:** width and alignment (`{p:>10}`) **won’t work on their own** for your type as long as you just use `write!` inside `fmt`. To make them work you need to use `f.pad(...)`, but that’s a topic for an advanced note.
 
 ##### 🤔 4.6. What to use when
 

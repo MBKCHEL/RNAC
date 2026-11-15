@@ -5,7 +5,7 @@ Unlike C# and most languages, in Rust any variable out of the box is a **constan
 
 ```rust
 let x = 5;
-x = 6; // ❌ ERROR! The compiler will give you a hand.
+x = 6; //  ERROR! The compiler will give you a hand.
 ```
 
 In order for a variable to be changed, you need to explicitly add **`mut`** (mutable):
@@ -13,7 +13,7 @@ In order for a variable to be changed, you need to explicitly add **`mut`** (mut
 
 ```rust
 let mut x = 5;
-x = 6; // ✅ Successfully changed!
+x = 6; //  Successfully changed!
 ```
 
 ### 2. Integers
@@ -29,7 +29,7 @@ In Rust, number types are named by their bit size. Very logical and systematic.
 | `i128` | `u128` | 128 bits (16 bytes) |
 | `isize` | `usize` | Depends on PC architecture (32 or 64 bit) |
 
-> 📌 **Important for gamedev:** `usize` is almost always used for **array indexes** and loops, because it is equal to the size of the pointer in your PC's memory.
+>  **Important for gamedev:** `usize` is almost always used for **array indexes** and loops, because it is equal to the size of the pointer in your PC's memory.
 
 ### 3. Fractional numbers (Floats)
 
@@ -55,7 +55,7 @@ let distance: f32 = 10.5;
 
 ```rust
 let is_running: bool = true;
-let icon: char = '🦀'; // Yes, this is a valid char!
+let icon: char = ''; // Yes, this is a valid char!
 ```
 
 ### 5. Text Hell: Strings (Introduction)

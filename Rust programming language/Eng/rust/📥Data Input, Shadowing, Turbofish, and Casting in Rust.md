@@ -115,8 +115,8 @@ fn main() {
     let likes_rust = input.trim().to_lowercase().parse::<bool>().unwrap();
 
     match likes_rust {
-        true => println!("Our man! 🦾 🦀"),
-        false => println!("Nothing, you'll fall in love soon. 😉"),
+        true => println!("Our man!  "),
+        false => println!("Nothing, you'll fall in love soon. "),
     }
 }
 ```
@@ -151,6 +151,6 @@ let result: i16 = num1 + (num2 as i16);
 
 4. **Conversion (Option 1 - Shading with type on the left):** `let input: u32 = input.trim().parse().unwrap();`
 
-5. **Conversion (Option 2 - Turbofish Style 🐟):** `let input = input.trim().parse::<u32>().unwrap();`
+5. **Conversion (Option 2 - Turbofish Style ):** `let input = input.trim().parse::<u32>().unwrap();`
 
-6. **Casting numbers:** Reduce through `as` only from bottom to top (`u8` ➔ `u16` ➔ `i32`).
+6. **Casting numbers:** Reduce through `as` only from bottom to top (`u8`  `u16`  `i32`).

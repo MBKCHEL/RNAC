@@ -9,7 +9,7 @@
 
 ### ⚖️ Pros and Cons
 
-|**Pros ➕**|**Cons ➖**|
+|**Pros **|**Cons **|
 |---|---|
 |**High speed ($O(1)$):** Search, insert and delete work in constant time.|**Heap memory allocation:** Works slower than stack arrays due to allocations.|
 |**Convenient API (`entry`):** Safe modification and insertion of data without double searching.|**Chaotic order:** Elements do not preserve the order they are added.|
@@ -125,7 +125,7 @@ let val = String::from("RTX 4060 Ti");
 let mut hardware = HashMap::new();
 hardware.insert(key, val);
 
-// println!("{key}"); // ❌ Error! The key variable has been moved to the HashMap.
+// println!("{key}"); //  Error! The key variable has been moved to the HashMap.
 ```
 
 > **Solution:** Use `HashMap<&str, &str>` borrow or pass `.clone()`.
