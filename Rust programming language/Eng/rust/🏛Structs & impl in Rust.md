@@ -68,7 +68,7 @@ fn main() {
 
 ```
 
-️ Key Rule:
+ Key Rule:
 
 - `Animal` is just the **type name** (the blueprint). You cannot get data directly via `Animal.dog` or `Animal::dog` because the blueprint itself doesn't store any data.
 - `word` is the **actual object** in memory. We use `word.dog` so the computer knows exactly which variable to pull the string from.

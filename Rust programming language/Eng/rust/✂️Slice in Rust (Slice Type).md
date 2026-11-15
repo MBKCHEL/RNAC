@@ -23,7 +23,7 @@ let world: &str = &s[6..11]; // "world"
 - `&s[0..s.len()]` $\rightarrow$ `&s[..]` _(the whole object as a slice)_
 
 
-> ️ **Important:** String literals (`let s = "hello";`) **already** have type `&str`! This is a slice pointing to the program binary.
+>  **Important:** String literals (`let s = "hello";`) **already** have type `&str`! This is a slice pointing to the program binary.
 
 ### 2. Slicing arrays and vectors (`&[T]`)
 

@@ -14,7 +14,7 @@ cargo add rand
 
 Cargo will add a line to `Cargo.toml` under `[dependencies]` for you. You can check the version there. This matters, because versions 0.9 and 0.10 renamed a lot of functions and traits, and in older tutorials you’ll see the old names.
 
-> ️ **VERSION TRAP:** `rand` often breaks old code when it updates. If you copied code from an old video and the compiler complains about `gen_range`, `thread_rng` or `Rng`, it means your version is new and the code is old.
+>  **VERSION TRAP:** `rand` often breaks old code when it updates. If you copied code from an old video and the compiler complains about `gen_range`, `thread_rng` or `Rng`, it means your version is new and the code is old.
 >    Version                        What changed
 > |0.8 → 0.9|`thread_rng()` → `rng()`, `gen_range()` → `random_range()`, `gen_bool()` → `random_bool()`, `gen()` → `random()`|
 > |0.9 → 0.10|Trait `Rng` → `RngExt` (the `use` line changes)|

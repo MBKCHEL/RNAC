@@ -4,7 +4,7 @@
 - `pkg` = package name, `file` = path to a local package file
 - `#` = comment, `$` is omitted for easier copying
 - Commands that need root are written with `sudo` (on BSD use `doas` or `su` if there is no sudo)
-- ️ = a trap that is easy to fall into
+-  = a trap that is easy to fall into
 
 ---
 
@@ -77,7 +77,7 @@ sudo pacman -Sc                  # remove old cached packages
 sudo pacman -Fy && pacman -F file  # find which package provides a file
 ```
 
-️ Never run `pacman -Sy pkg` (refresh without upgrade) — it causes partial upgrades and can break the system. Use `-Syu` first, or `-Syu pkg`.
+ Never run `pacman -Sy pkg` (refresh without upgrade) — it causes partial upgrades and can break the system. Use `-Syu` first, or `-Syu pkg`.
 
 ---
 
@@ -98,7 +98,7 @@ yay -G pkg                       # download PKGBUILD without building
 yay -Sc                          # clean cache
 ```
 
-️ Do not run as root. Read the PKGBUILD of unknown AUR packages before installing.
+ Do not run as root. Read the PKGBUILD of unknown AUR packages before installing.
 
 ---
 
@@ -284,7 +284,7 @@ rpm -qa                          # list installed (via rpm)
 
 ## poldek
 
-**Used in:** PLD Linux **Type:** legacy, rpm front-end with an interactive shell ️ Rare tool, check `man poldek` for your version.
+**Used in:** PLD Linux **Type:** legacy, rpm front-end with an interactive shell  Rare tool, check `man poldek` for your version.
 
 ```bash
 sudo poldek --up                 # update package indexes
@@ -341,7 +341,7 @@ qlist -I                         # installed packages (portage-utils)
 sudo eclean-dist                 # clean old distfiles (gentoolkit)
 ```
 
-️ Always read the plan before pressing Y: `-a` (ask) exists for this reason.
+ Always read the plan before pressing Y: `-a` (ask) exists for this reason.
 
 ---
 
@@ -408,7 +408,7 @@ sudo slapt-get --clean           # clean package cache
 
 ## swaret
 
-**Used in:** Slackware (older setups) **Type:** legacy, mostly replaced by [slackpkg](#slackpkg) and [slapt-get](#slapt-get) ️ Check `swaret --help` for your version.
+**Used in:** Slackware (older setups) **Type:** legacy, mostly replaced by [slackpkg](#slackpkg) and [slapt-get](#slapt-get)  Check `swaret --help` for your version.
 
 ```bash
 sudo swaret --update             # refresh the package list
@@ -423,7 +423,7 @@ swaret --list                    # list packages
 
 ## netpkg
 
-**Used in:** Zenwalk (Slackware-based) **Type:** legacy, project is no longer active ️ Rare tool. It has a text menu: just run `sudo netpkg`, and check `netpkg --help` for options.
+**Used in:** Zenwalk (Slackware-based) **Type:** legacy, project is no longer active  Rare tool. It has a text menu: just run `sudo netpkg`, and check `netpkg --help` for options.
 
 ```bash
 sudo netpkg                      # open the interactive interface (update, install, remove)
@@ -514,7 +514,7 @@ cpt checksum pkg                 # generate checksums
 
 ## tce
 
-**Used in:** Tiny Core Linux (`tce-load` and related tools) **Type:** binary extensions (`.tcz`), loaded into RAM ️ By default everything lives in RAM. To keep an extension after reboot it must be in `/tce/optional` and listed in `/tce/onboot.lst`.
+**Used in:** Tiny Core Linux (`tce-load` and related tools) **Type:** binary extensions (`.tcz`), loaded into RAM  By default everything lives in RAM. To keep an extension after reboot it must be in `/tce/optional` and listed in `/tce/onboot.lst`.
 
 ```bash
 tce-load -wi pkg                 # download (w) + install (i)
@@ -550,7 +550,7 @@ sudo conary rollback ID          # roll back a changeset
 
 ## swupd
 
-**Used in:** Clear Linux OS **Type:** bundle-based (you install bundles, not individual packages) ️ Clear Linux was discontinued by Intel in July 2025, so no new updates.
+**Used in:** Clear Linux OS **Type:** bundle-based (you install bundles, not individual packages)  Clear Linux was discontinued by Intel in July 2025, so no new updates.
 
 ```bash
 sudo swupd update                # update the OS
@@ -658,7 +658,7 @@ sudo nixos-rebuild switch        # apply /etc/nixos/configuration.nix
 sudo nixos-rebuild switch --rollback   # go back to the previous generation
 ```
 
-️ On NixOS the "right way" is to put packages in `configuration.nix`, not `nix-env`.
+ On NixOS the "right way" is to put packages in `configuration.nix`, not `nix-env`.
 
 ---
 
@@ -772,7 +772,7 @@ pipx install pkg                 # install a tool in its own isolated env
 pipx upgrade-all                 # upgrade all
 ```
 
-️ On Arch, Debian 12+, Ubuntu 23.04+ and others `pip install` outside a venv gives `externally-managed-environment`. This is intended (PEP 668): use a venv, `pipx`, or the system package (`pacman -S python-pkg`).
+ On Arch, Debian 12+, Ubuntu 23.04+ and others `pip install` outside a venv gives `externally-managed-environment`. This is intended (PEP 668): use a venv, `pipx`, or the system package (`pacman -S python-pkg`).
 
 ---
 
@@ -817,7 +817,7 @@ yarn up pkg                      # update a dependency (Berry)
 yarn global add pkg              # global install (Classic only)
 ```
 
-️ Berry (v2+) has no `yarn global`. Use `npm i -g`, `pnpm add -g`, or `yarn dlx pkg` for one-off runs.
+ Berry (v2+) has no `yarn global`. Use `npm i -g`, `pnpm add -g`, or `yarn dlx pkg` for one-off runs.
 
 ---
 
@@ -893,7 +893,7 @@ composer self-update             # update Composer itself
 
 ## upkg
 
-️ I could not match `upkg` to one well-known package manager, so I did not invent commands for it.
+ I could not match `upkg` to one well-known package manager, so I did not invent commands for it.
 
 **TODO:** decide which tool you mean and fill this section:
 
@@ -907,6 +907,6 @@ Once the tool is known, use the same template as above: **Used in / Type**, then
 
 ## Notes for maintaining this file
 
-- Every section follows the same template: header, `Used in`, `Type`, one code block, optional ️ warning.
+- Every section follows the same template: header, `Used in`, `Type`, one code block, optional  warning.
 - Keep comments in English: the file is shared between `eng/` and `ru/`.
-- Legacy or rare tools are marked ️ because commands may differ between versions; verify with `--help` or `man`.
+- Legacy or rare tools are marked  because commands may differ between versions; verify with `--help` or `man`.
