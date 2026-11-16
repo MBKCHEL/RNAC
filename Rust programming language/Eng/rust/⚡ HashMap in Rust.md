@@ -7,7 +7,7 @@
 - **Aggregation:** Counting quantities, grouping data, storing configurations and cache.
 
 
-### ⚖️ Pros and Cons
+### Pros and Cons
 
 |**Pros **|**Cons **|
 |---|---|
@@ -15,7 +15,7 @@
 |**Convenient API (`entry`):** Safe modification and insertion of data without double searching.|**Chaotic order:** Elements do not preserve the order they are added.|
 |**Strong typing:** Full compiler control over key and value types.|**Key requirements:** The `K` key must implement the `Eq` + `Hash` traits.|
 
-### 🛠 Basic CRUD (Syntax)
+### Basic CRUD (Syntax)
 
 To work, you always need an import: `use std::collections::HashMap;`
 
@@ -79,7 +79,7 @@ let removed = map.remove("AX200");
 }
 ```
 
-### ⚡ Atomic operation via `.entry()` API
+### Atomic operation via `.entry()` API
 
 Eliminates the need to manually check “is there a key, if not, add it.”
 
@@ -109,7 +109,7 @@ fn main() {
 
 ```
 
-### ⚠️ Ownership of Memory
+### Ownership of Memory
 
 - **Types with `Copy`** (`i32`, `f64`, `bool`): Copied to the card, the originals remain available.
 
@@ -130,7 +130,7 @@ hardware.insert(key, val);
 
 > **Solution:** Use `HashMap<&str, &str>` borrow or pass `.clone()`.
 
-### 🖥 Output HashMap to console
+### Output HashMap to console
 
 
 
@@ -161,7 +161,7 @@ map_1.insert(10, "Intel AX200");
 println!("Network: {}", map_1.get(&10).unwrap_or(&"netu"));
 ```
 
-### 📌 Cheat sheet
+### Cheat sheet
 
 - `use std::collections::HashMap;` - import.
 

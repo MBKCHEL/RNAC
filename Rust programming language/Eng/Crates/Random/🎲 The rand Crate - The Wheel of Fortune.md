@@ -1,8 +1,8 @@
-#### 🎲 The `rand` Crate: The Wheel of Fortune
+#### The `rand` Crate: The Wheel of Fortune
 
 Rust has **no** built-in random number generator, it’s not even in the standard library. So all randomness comes from a crate (library) called **`rand`**. `rand` is a messenger who rolls the dice for you.
 
-##### 📦 1. How to install it
+##### 1. How to install it
 
 Open a terminal in your project folder and type:
 
@@ -20,7 +20,7 @@ Cargo will add a line to `Cargo.toml` under `[dependencies]` for you. You can ch
 > |0.9 → 0.10|Trait `Rng` → `RngExt` (the `use` line changes)|
 > In 0.10 the name `Rng` didn’t disappear, it now means a **different** trait (the low-level one, formerly `RngCore`). That’s why the old `use rand::Rng;` compiles with an “unused import” warning, but the methods still can’t be found.
 
-##### 🎰 2. The simplest roll: `rand::random()`
+##### 2. The simplest roll: `rand::random()`
 
 Want just a random number without any fuss? Call `random()`:
 
@@ -36,7 +36,7 @@ fn main() {
 
 Notice that Rust has to **know the type**, so the compiler understands what the heck you want from it. That’s why we write `let a: u8`. If you don’t specify the type, it won’t know what you’re asking for.
 
-##### 🏺 3. Your own generator: `rand::rng()`
+##### 3. Your own generator: `rand::rng()`
 
 `random()` is handy for a single roll. But if you need **many** rolls of different kinds, you summon **your own slave** (a generator):
 
@@ -61,13 +61,13 @@ fn main() {
 }
 ```
 
-###### 🔍 Breaking it down
+###### Breaking it down
 
 - **`use rand::RngExt;`**: this is the “license” that gives the messenger the right to roll dice. `RngExt` is a trait (a set of abilities). If you don’t import it, Rust will say the method `random_range` doesn’t exist. This is the most common beginner mistake!
 - **`let mut rng`**: `mut` is needed because the generator’s internal state changes after every roll.
 - **`1..=6`** and **`0..100`**: these are ranges. With the `=` sign the right end **is included**, without it, it **is not**.
 
-##### 🎴 4. Working with lists: pick and shuffle
+##### 4. Working with lists: pick and shuffle
 
 For vectors you need two more “licenses” from the `seq` module:
 
@@ -92,13 +92,13 @@ fn main() {
 }
 ```
 
-###### 🔍 Breaking it down
+###### Breaking it down
 
 - **`choose`** returns an `Option`, because there’s nothing to pick from an empty list. Rust makes you think about that.
 - **`&mut rng`**: we **lend the messenger out** (remember borrowing?). The method takes a mutable reference to our generator, because the generator changes when it rolls.
 - **`shuffle`** changes the list itself instead of creating a new one. That’s why `slaves` is declared `mut`.
 
-##### 🌱 5. The seed: the same fate every time
+##### 5. The seed: the same fate every time
 
 A regular generator gives different numbers every time. But sometimes you want randomness to be **repeatable**: for tests, or for a game where the world is built from a “seed” (like in Minecraft). In that case you give the generator a **seed**:
 
@@ -117,7 +117,7 @@ fn main() {
 
 The same seed gives the same sequence of “random” numbers. This is called **pseudo-randomness**: the numbers look random, but they are actually computed by a formula from the seed.
 
-##### 🩺 6. How not to suffer with versions: read the compiler
+##### 6. How not to suffer with versions: read the compiler
 
 When your code doesn’t compile because of a version change, **don’t google right away**. The Rust compiler usually tells you what to do. For example, on the `random_range` error it gave this hint:
 
@@ -129,7 +129,7 @@ help: trait `RngExt` which provides `random_range` is implemented but not in sco
 
 This means: “the method exists, but the trait isn’t imported, here’s the line you need to add”. Look for the word **`help:`** in the output. The compiler’s hints are specific to the exact version you have installed, so they’re more accurate than any tutorial.
 
-##### 🧠 Quick cheat sheet
+##### Quick cheat sheet
 
 1. `cargo add rand`: add the crate.
 2. `rand::random::<type>()`: one quick roll, the type is required.

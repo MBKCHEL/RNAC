@@ -1,4 +1,4 @@
-### 🔑 The main rule of input in Rust
+### The main rule of input in Rust
 
 **Rust always reads any keyboard input as text (string).** To work with the data further, we need a mutable `String` buffer and a chain of methods for clearing and transforming.
 
@@ -58,7 +58,7 @@ io::stdin().read_line(&mut x)
 println!("You entered: {x}");
 }
 ```
-### 2. Conversion via Turbofish 🐟 (`::<Type>`)
+### 2. Conversion via Turbofish (`::<Type>`)
 
 Instead of explicitly specifying the type on the left (`let x: i32 = ...`), you can attach the type directly to the `.parse()` method using the turbo-fish syntax - `::<Type>`.
 
@@ -87,7 +87,7 @@ println!("Sum: {result}");
 }
 ```
 
-#### 🛠 Analysis of chips:
+#### Analysis of chips:
 
 - **`.parse::<i32>()`** - forcibly tells the `.parse()` method what type the string should be transformed into (`i32`, `u32`, `f64`, `bool`).
 
@@ -135,13 +135,13 @@ let num2: u8 = 15;
 let result: i16 = num1 + (num2 as i16);
 ```
 
-#### ⚠️ Iron rule of casting:
+#### Iron rule of casting:
 
 **Always cast a smaller type to a larger one** (for example, from `u8` to `i16` or from `i32` to `f64`).
 
 > **Important:** If you try to compress a larger type into a smaller one (for example, make `1000_i32 as u8`), Rust will not throw a compilation error, but the number will be truncated (overflow) and you will get buggy, distorted data.
 
-### 🧠 Final cheat sheet-algorithm (Remember as Our Father)
+### Final cheat sheet-algorithm (Remember as Our Father)
 
 1. **Buffer creation:** `let mut input = String::new();`
 

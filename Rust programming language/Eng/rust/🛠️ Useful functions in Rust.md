@@ -59,7 +59,7 @@ The letter `b` before the quotes turns the character into its numeric byte code:
 
 We converted the string to bytes (`as_bytes()`), so we must compare elements **with bytes** (`b' '`), and not with ordinary letters!
 
-### 💡 Summary in three words:
+### Summary in three words:
 
 1. `s.as_bytes()` $\rightarrow$ turns text into a list of byte numbers `[104, 101, 108...]`.
 

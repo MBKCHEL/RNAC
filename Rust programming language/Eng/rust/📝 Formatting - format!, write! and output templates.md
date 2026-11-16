@@ -1,8 +1,8 @@
-### 📝 `format!` and `write!`: building text from pieces
+### `format!` and `write!`: building text from pieces
 
 >  **If you don’t know what macros are and why there’s a `!` at the end, check this file:** [[! Macros in Rust|Click here!]]
 
-#### ❓ 1. What problem do these macros solve
+#### 1. What problem do these macros solve
 
 Very often you need to build **one string out of several pieces**: some ready-made text plus the values of variables. For example, from the word “Hello”, a name and an age you want to get “Hello, Spartacus! You are 30 years old.”
 
@@ -15,7 +15,7 @@ Both macros take a **template** (text with “holes”) and **data** (what goes 
 
 ---
 
-#### 💻 2. `format!`: build a new string
+#### 2. `format!`: build a new string
 
 ```Rust
 fn main() {
@@ -28,12 +28,12 @@ fn main() {
 }
 ```
 
-##### 🔍 Breaking it down
+##### Breaking it down
 
 - **`{name}` and `{age}`**: these are the “holes”. Rust looks for variables with the same names and substitutes their values. The variables must exist **before** `format!` is called.
 - **`let text = format!(...)`**: the macro **returns** a ready `String`. It doesn’t print anything to the screen by itself, it only builds the text.
 
-##### 🔢 Three ways to fill the holes
+##### Three ways to fill the holes
 
 **By variable name** (shown above): `{name}`.
 
@@ -69,7 +69,7 @@ fn main() {
 
 >  **TRAP:** Inside the `{}` itself you can write **only a name**. The line `format!("{a + b}")` will not compile. An expression (`a + b`) is passed after the comma, or computed beforehand into a separate variable.
 
-##### 📦 `format!` doesn’t take your variables
+##### `format!` doesn’t take your variables
 
 Remember ownership? `format!` only **looks** at your variables, as if through `&`. So they stay alive after the call:
 
@@ -84,7 +84,7 @@ fn main() {
 }
 ```
 
-##### 🧰 What to do with the result
+##### What to do with the result
 
 The result is a regular `String`, so you can use it like any other string.
 
@@ -127,7 +127,7 @@ fn main() {
 }
 ```
 
-##### 🆚 Why `format!` if there’s `+`
+##### Why `format!` if there’s `+`
 
 ```Rust
 fn main() {
@@ -149,7 +149,7 @@ The result is the same, but `format!` does everything for you: it turns numbers 
 
 ---
 
-#### 🎛️ 3. The template: this is where `format!` shows its power
+#### 3. The template: this is where `format!` shows its power
 
 So far the holes contained only a name. But after the name you can put a **colon** and write **formatting rules**: how to show the value, what width, what alignment. All of this works the same way in `format!`, `write!` and `println!`.
 
@@ -159,7 +159,7 @@ The general form of a hole:
 { name : rules }
 ```
 
-##### 👁️ 3.1. `{}` and `{:?}`: two ways to show a value
+##### 3.1. `{}` and `{:?}`: two ways to show a value
 
 Every value can have two views: one **for people** and one **for the programmer**.
 
@@ -207,7 +207,7 @@ fn main() {
 }
 ```
 
-##### 📐 3.2. The full formula of the rules
+##### 3.2. The full formula of the rules
 
 The rules go **in exactly this order** (each one can be skipped):
 
@@ -228,7 +228,7 @@ The rules go **in exactly this order** (each one can be skipped):
 
 Don’t be scared, we’ll go through it piece by piece.
 
-##### ↔️ 3.3. Width and alignment
+##### ↔3.3. Width and alignment
 
 Width is the **minimum** number of characters. If the text is shorter, the rest is filled with spaces. If it’s longer, it is not cut off.
 
@@ -255,7 +255,7 @@ fn main() {
 
 Width is counted in **characters**, not bytes, so non-English text lines up fine too.
 
-##### 🔢 3.4. Precision, sign and zeros
+##### 3.4. Precision, sign and zeros
 
 ```Rust
 fn main() {
@@ -274,7 +274,7 @@ fn main() {
 }
 ```
 
-##### 🧮 3.5. Number systems
+##### 3.5. Number systems
 
 For a low-level programmer this is very useful:
 
@@ -298,7 +298,7 @@ fn main() {
 
 The line `{:08b}` reads like this: “with zeros (`0`), up to width 8 (`8`), in binary (`b`)”.
 
-##### 🪄 3.6. Width and precision from a variable
+##### 3.6. Width and precision from a variable
 
 If you can’t write the width as a number in advance, use a variable name with a `$` at the end:
 
@@ -314,7 +314,7 @@ fn main() {
 
 `width$` means “take the width from the variable `width`”, and `prec$` means “take the precision from the variable `prec`”.
 
-##### 🚪 3.7. How to print the curly braces themselves
+##### 3.7. How to print the curly braces themselves
 
 Since `{` and `}` are taken by the holes, to show the braces themselves you **double** them:
 
@@ -327,7 +327,7 @@ fn main() {
 }
 ```
 
-##### 🧾 3.8. Putting it all together: an even table
+##### 3.8. Putting it all together: an even table
 
 ```Rust
 fn main() {
@@ -356,7 +356,7 @@ The item name is left-aligned and takes 10 characters, the price is right-aligne
 
 ---
 
-#### 🖊️ 4. `write!`: append to an already existing place
+#### 4. `write!`: append to an already existing place
 
 `format!` creates a **new** string every time. But `write!` writes **wherever you point it**: into an already existing `String`, into a file, into the console. Its template is **exactly the same** as in `format!`, only one more argument is added before the template: **where to write**.
 
@@ -367,7 +367,7 @@ write!( where_to_write, template, data )
 
 There is also the `writeln!` version: the same thing, but it adds a line break at the end of the text.
 
-##### 📜 4.1. Writing into a `String`
+##### 4.1. Writing into a `String`
 
 ```Rust
 use std::fmt::Write; // IMPORTANT! Without this line write! won't work for String
@@ -390,7 +390,7 @@ Hello, Gaius! You are 30 years old.
 The end.
 ```
 
-##### 🔍 Breaking it down
+##### Breaking it down
 
 - **`use std::fmt::Write;`**: this is a trait, like `RngExt` in the notes about `rand`. Without the import Rust will say that `String` has no method `write_fmt`. If you see that error, you simply forgot this line.
 - **`let mut text`**: `mut` is required because we **change** the string by appending to it.
@@ -398,7 +398,7 @@ The end.
 - **`writeln!`**: added a line break after the text by itself. That’s why “The end.” ended up on a new line.
 - **`.unwrap()`**: explained in the next point.
 
-##### ❓ 4.2. What is `.unwrap()` and why does `write!` return a `Result`
+##### 4.2. What is `.unwrap()` and why does `write!` return a `Result`
 
 `format!` simply returns a string, and nothing can go wrong. But `write!` writes into someone else’s place, and there a failure **can theoretically** happen (for example, the disk ran out of space for a file). That’s why it returns a **`Result`**: “did it work or not”.
 
@@ -409,7 +409,7 @@ If you ignore the result, the compiler gives a warning, `unused Result that must
 - **`let _ = write!(...);`**: “I don’t care whether it worked or not”.
 - *More details in the file*: [[Error handling in Rust|Click here!]]
 
-##### 🔁 4.3. Why write into a `String` if there’s `format!`
+##### 4.3. Why write into a `String` if there’s `format!`
 
 The main reason is **loops**. Say you need to build a long text out of many pieces.
 
@@ -437,7 +437,7 @@ Line number 3
 
 If we built this text with `format!`, we’d have to create a new temporary string at every step and then glue it onto the main one. But `write!` appends **straight into the string you need**, without extra copies. That’s both shorter and faster.
 
-##### 📁 4.4. Writing into a file and into the console
+##### 4.4. Writing into a file and into the console
 
 Here you need a **different** trait, from a different place:
 
@@ -457,7 +457,7 @@ fn main() -> std::io::Result<()> {
 
 After running it, a file `hello.txt` with two lines appears.
 
-##### 🔍 Breaking it down
+##### Breaking it down
 
 - **`use std::io::Write;`**: a trait for writing to the outside world (files, console, network). It is **not** the same as `std::fmt::Write` for strings.
 - **`fn main() -> std::io::Result<()>`**: we allow `main` to return a result. This is needed to be able to use `?`.
@@ -488,7 +488,7 @@ use std::io::Write;
 
 > Or, if you only need the trait so that its methods work, you can write `use std::fmt::Write as _;`.
 
-##### 🏗️ 4.5. The main scenario: teach your own struct to print via `{}`
+##### 4.5. The main scenario: teach your own struct to print via `{}`
 
 Remember that `{}` doesn’t work for every type? `Vec` doesn’t have it. And your struct won’t have it either, until you describe **how to show it to people**. This is exactly where `write!` is needed most often.
 
@@ -515,7 +515,7 @@ fn main() {
 }
 ```
 
-##### 🔍 Breaking it down
+##### Breaking it down
 
 - **`impl fmt::Display for Point`**: “I’m describing how to show `Point` via `{}`”. `Display` is that very “view for people”.
 - **`fn fmt(&self, f: &mut fmt::Formatter)`**: this is the name of the method Rust calls when it meets `{}` with your type. `&self` is a reference to the point itself (remember borrowing?). `f` is a mutable reference to the **“sheet of paper”** on which the text is currently being assembled.
@@ -526,7 +526,7 @@ After this, `Point` can do everything: it works in `println!("{p}")`, in `format
 
 >  **Nuance:** width and alignment (`{p:>10}`) **won’t work on their own** for your type as long as you just use `write!` inside `fmt`. To make them work you need to use `f.pad(...)`, but that’s a topic for an advanced note.
 
-##### 🤔 4.6. What to use when
+##### 4.6. What to use when
 
 - **You just need a new string**: `format!`.
 - **You’re building a long text piece by piece** (in a loop, in several places): `write!` or `writeln!` into a `String` (`std::fmt::Write`).
@@ -535,7 +535,7 @@ After this, `Point` can do everything: it works in `println!("{p}")`, in `format
 
 ---
 
-#### 🧠 Quick cheat sheet
+#### Quick cheat sheet
 
 **Basics**
 

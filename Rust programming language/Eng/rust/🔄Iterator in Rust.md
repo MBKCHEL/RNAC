@@ -1,11 +1,11 @@
-## 🎯 What is it
+## What is it
 
 **Iterator** is a “walker” through the elements of a collection (array, vector, etc.). Instead of manually counting the indices (`i = 0`, `i = 1`), you ask the iterator: _"Give me one element at a time until I run out of them"_.
 
 - **Main feature:** In Rust, iterators are **lazy** (Zero-Cost Abstractions). They don't do anything and don't forget their memory until you explicitly ask them to run through the elements.
 
 
-## 🛠 3 Ways to Get Iterator
+## 3 Ways to Get Iterator
 
 Depending on what you need to do with the data:
 
@@ -18,7 +18,7 @@ Depending on what you need to do with the data:
 
 >  When you write `for element in help_print`, Rust automatically calls `.into_iter()` or `.iter()` under the hood.
 
-## ⚡️ Basic Example
+## Basic Example
 
 
 
@@ -34,7 +34,7 @@ fn main() {
 
 ```
 
-## 🏎 Cool methods (Chains)
+## Cool methods (Chains)
 
 Iterators can be combined into powerful data processing chains without a single `for` loop:
 

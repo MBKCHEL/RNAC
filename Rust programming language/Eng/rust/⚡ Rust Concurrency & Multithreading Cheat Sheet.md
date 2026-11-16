@@ -190,7 +190,7 @@ fn main() {
 
 ---
 
-### 💡 Quick Mental Rules
+### Quick Mental Rules
 
 * **Standard Iterator:** `.into_iter()` → Single-threaded (1 core).
 * **Parallel Iterator:** `.into_par_iter()` → Multi-threaded (All cores).

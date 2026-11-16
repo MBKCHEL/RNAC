@@ -59,7 +59,7 @@ Rust
 
 ```rust
 let is_running: bool = true;
-let icon: char = ''; // Да, это валидный char!
+let icon: char = '🦀'; // Да, это валидный char!
 ```
 
 ### 5. Текстовый ад: Строки (Введение)

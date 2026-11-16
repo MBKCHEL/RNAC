@@ -88,7 +88,7 @@ println!("y = {y}"); // Outputs: y = 4
 println!("x = {x}"); // Outputs: x = 5 (outer x remains safe and sound!)
 ```
 
-### 💡 Memory cheat sheet:
+### Memory cheat sheet:
 
 1. Need to assemble a complex object/number from a bunch of small calculations? → **Pack in `let x = { ... };`**.
 

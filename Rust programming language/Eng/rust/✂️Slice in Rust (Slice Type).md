@@ -77,7 +77,7 @@ fn main() {
 
 ```
 
-### 💡 The main rules for memorizing slices:
+### The main rules for memorizing slices:
 
 1. **Do not own the data:** A slice is always a reference, it does not remove memory when the bracket closes.
 

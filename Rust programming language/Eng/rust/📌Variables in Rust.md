@@ -55,7 +55,7 @@ let distance: f32 = 10.5;
 
 ```rust
 let is_running: bool = true;
-let icon: char = ''; // Yes, this is a valid char!
+let icon: char = '🦀'; // Yes, this is a valid char!
 ```
 
 ### 5. Text Hell: Strings (Introduction)

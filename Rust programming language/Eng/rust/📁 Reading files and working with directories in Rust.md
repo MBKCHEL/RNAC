@@ -1,4 +1,4 @@
-# 📁 Reading files and working with directories in Rust
+# Reading files and working with directories in Rust
 
 All basic work with the file system is in the `std::fs` module.
 
@@ -337,7 +337,7 @@ fn main() {
 }
 ```
 
-## 🎯 Cheat sheet by types and functions
+## Cheat sheet by types and functions
 
 - `fs::read_to_string(path)` - reads the file in `String`.
 

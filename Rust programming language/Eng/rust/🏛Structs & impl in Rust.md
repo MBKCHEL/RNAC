@@ -16,7 +16,7 @@ active: bool
 
 ### 2. Creating objects and chips (Shorthand & Update)
 
-#### 🔹 Field Init Shorthand
+#### Field Init Shorthand
 
 If the variable names match the fields of the structure, there is no need to duplicate:
 
@@ -37,7 +37,7 @@ active: true,
 };
 ```
 
-#### 🔹 Create from another object (Struct Update Syntax)
+#### Create from another object (Struct Update Syntax)
 
 Do you want to copy the user, but change only a couple of fields? Use `..`:
 
@@ -50,7 +50,7 @@ email: String::from("yourexample@gmail.com"),
 ..user1 // All other fields (age, active) will be taken from user1!
 };
 ```
-#### 🔹 Reading a Variable from a Struct
+#### Reading a Variable from a Struct
 
 ```rust
 #[derive(Debug)] // Allows printing the entire struct using {:?}
@@ -133,7 +133,7 @@ let subject = AlwaysEqual;
 
 ### **Why are they needed?** Empty structures are used when you don’t need to store data, but you need to attach some behavior to the structure via `impl` or implement a **Trate** (interface). For example, to create services, parsers or type markers.
 
-### 🚀 Full working example in one block:
+### Full working example in one block:
 
 
 
@@ -233,7 +233,7 @@ fn main() {
 
 ```
 
-### 💡 Checklist to remember
+### Checklist to remember
 
 - **`struct`** - stores only **data**.
 

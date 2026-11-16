@@ -1,11 +1,11 @@
-## 🎯 What it is and why you need it
+## What it is and why you need it
 
 **Ratatui** is a Rust library (crate) for layout and rendering of text-based user interfaces (TUIs) right in the console.
 
 * **Why you need it:** It allows you to turn a regular text-based console utility into a full-fledged application with windows, borders, dynamic lists, volume sliders, progress bars, and tabs (like `htop`, `btop`, `neovim`, or `cmus`).
 * **How it works:** Ratatui **does not read** keypresses and **does not manage** the terminal itself. It is responsible **only for rendering** (drawing pixel-characters). To work with the screen and keyboard, it uses a backend - most commonly **Crossterm**.
 
-## 🧱 4 Architectural Pillars
+## 4 Architectural Pillars
 
 Any TUI built with Ratatui relies on four core concepts:
 
@@ -14,7 +14,7 @@ Any TUI built with Ratatui relies on four core concepts:
 3. **`Layout`** - the grid/layout. Splits the screen (or a part of it) into rectangular regions (`Rect`).
 4. **`Widgets`** - ready-made graphical components (bordered blocks, lists, progress bars, text).
 
-## 🛠 Dependency Setup (`Cargo.toml`)
+## Dependency Setup (`Cargo.toml`)
 
 ```toml
 [dependencies]
@@ -22,7 +22,7 @@ ratatui = "0.26"
 crossterm = "0.27"
 ```
 
-## ⚙️ Step-by-Step Guide
+## Step-by-Step Guide
 
 ### 1. Terminal Setup (Raw Mode + Alternate Screen)
 
@@ -164,7 +164,7 @@ fn main() -> Result<()> {
 }
 ```
 
-## ⚠️ Important Nuances and Pitfalls
+## Important Nuances and Pitfalls
 
 1. **Panic Handling:** If the program crashes (`panic!`) while the terminal is still in Raw Mode, the console will "break" (stop showing typed input). Always restore the terminal on exit or use `std::panic::set_hook`.
 2. **Performance:** `terminal.draw()` calculates the difference (diff) between current and previous frames. **Only changed characters are redrawn**, so Ratatui applications put almost no load on the CPU.

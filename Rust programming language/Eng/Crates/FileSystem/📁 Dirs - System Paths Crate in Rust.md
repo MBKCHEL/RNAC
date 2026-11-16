@@ -1,17 +1,17 @@
-## 🎯 Why you need it
+## Why you need it
 
 The **`dirs`** crate provides correct paths to standard user directories (Home, Config, Music, Documents) regardless of where the code is executed - Linux, Windows, or macOS.
 
 * **Main advantage:** Saves you from hardcoding paths like `/home/user/` or `C:\Users\...`.
 
-## 🛠 Dependency Setup (`Cargo.toml`)
+## Dependency Setup (`Cargo.toml`)
 
 ```toml
 [dependencies]
 dirs = "5.0"
 ```
 
-## ⚡ Top Functions (Most Important)
+## Top Functions (Most Important)
 
 All functions return `Option<PathBuf>`, since in theory a directory might not exist on the system.
 
@@ -22,7 +22,7 @@ All functions return `Option<PathBuf>`, since in theory a directory might not ex
 | **dirs::config_dir()**   | `/home/username/.config`   | `C:\Users\Username\AppData\Roaming` |
 | **dirs::download_dir()** | `/home/username/Downloads` | `C:\Users\Username\Downloads`       |
 
-## 💡 Basic Template
+## Basic Template
 
 ```rust
 use dirs;

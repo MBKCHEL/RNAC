@@ -61,7 +61,7 @@ This is where the magic of Rust brings everything together:
 - Memory in the **heap** is instantly cleared. No leaks!
 
 
-### 💡 A short cheat sheet to remember:
+### A short cheat sheet to remember:
 
 |**Parameter**|**Stack**|**Heap**|
 |---|---|---|

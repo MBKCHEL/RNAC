@@ -2,13 +2,13 @@
 
 ---
 
-## 👤 Author
+## Author
 
 [**MBKCHEL**](https://mbkchel.vercel.app) - author of all texts and notes.
 
 ---
 
-# ⚡ RNAC - notes from dev, to dev/people
+# RNAC - notes from dev, to dev/people
 
 ![Rust](https://img.shields.io/badge/Language-Rust-orange?style=flat-square&logo=rust)
 ![Linux](https://img.shields.io/badge/OS-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
@@ -20,18 +20,18 @@ A personal knowledge base, cheat sheets, and structured notes on the **Rust** la
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
-### 🦀 Rust
+### Rust
 - `Eng/rust/` - Translated notes & cheat sheets in English.
 - `Ru/rust/` - Original notes & cheat sheets in Russian.
 
-### 🐧 Linux & Shell
+### Linux & Shell
 - `Linux/Eng/` - Notes on Linux commands, I/O redirection, and terminal workflows.
 - `Linux/Ru/` - Notes on Linux commands and terminal workflows in Russian.
 
 ---
 
-## 📜 License
+## License
 
 Distributed under the **GNU General Public License v3.0 (GPLv3)**. Details can be found in the [LICENSE](LICENSE) file.

@@ -1,4 +1,4 @@
-# 🐧 Linux Distributions by Family
+# Linux Distributions by Family
 ---
 
 ## Table of contents

@@ -98,14 +98,14 @@ fn main() {
 
 ```
 
-### 🛑 Loop management: `break` and `continue`
+### Loop management: `break` and `continue`
 
 1. **`break`** - immediately breaks out of the loop.
 
 2. **`continue`** - skips the rest of the current lap and immediately moves on to the next one.
 
 
-#### 🏷 Loop Labels
+#### Loop Labels
 
 If you have a loop inside a loop, and you need to jump out of the deepest `loop` from the **outer one** - use labels with a single quote ``name`:
 
@@ -125,7 +125,7 @@ If you have a loop inside a loop, and you need to jump out of the deepest `loop`
 
 ```
 
-### 🧠 Brief cheat sheet: What and when to use?
+### Brief cheat sheet: What and when to use?
 
 |**Cycle**|**When to use?**|**Example**|
 |---|---|---|

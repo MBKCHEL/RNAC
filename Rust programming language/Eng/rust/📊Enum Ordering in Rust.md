@@ -33,7 +33,7 @@ Ordering::Equal => println!("You guessed it right!"),
 }
 ```
 
-### 💡 Main tips to remember:
+### Main tips to remember:
 
 - **Combination with `match`:** `Ordering` works perfectly with the `match` construct. **all 3 options** are tried - if you skip even one, the Rust compiler will throw an error (it monitors completeness).
 

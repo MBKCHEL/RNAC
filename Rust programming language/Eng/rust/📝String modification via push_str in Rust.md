@@ -1,6 +1,6 @@
 In Rust, strings of type `String` can be dynamically expanded (text added to them), but only if the variable is created as mutable (`mut`).
 
-### 🛠️ Method `.push_str()`
+### Method `.push_str()`
 
 This method takes your string and firmly attaches another text slice `&str` to the end of it.
 
@@ -18,7 +18,7 @@ println!("{item}"); // Outputs: "Bloody Axe"
 }
 ```
 
-### 🪓 What is the difference between `push_str` and `push`?
+### What is the difference between `push_str` and `push`?
 
 In Rust there are two similar methods for strings, do not confuse them in the code:
 

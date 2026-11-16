@@ -2,13 +2,13 @@
 
 ---
 
-## 👤 Автор
+## Автор
 
 [**MBKCHEL**](https://mbkchel.vercel.app) - автор всех текстов и конспектов.
 
 ---
 
-# ⚡ RNAC - Конспекты от разработчика людям/разработчикам
+# RNAC - Конспекты от разработчика людям/разработчикам
 
 ![Rust](https://img.shields.io/badge/Language-Rust-orange?style=flat-square&logo=rust)
 ![Linux](https://img.shields.io/badge/OS-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
@@ -20,18 +20,18 @@
 
 ---
 
-## 📂 Структура репозитория
+## Структура репозитория
 
-### 🦀 Rust
+### Rust
 - `Ru/rust/` - Оригинальные конспекты и шпаргалки на русском языке.
 - `Eng/rust/` - Переводы конспектов и шпаргалок на английский язык.
 
-### 🐧 Linux & Shell
+### Linux & Shell
 - `Linux/Ru/` - Конспекты по командам, перенаправлению потоков и работе в терминале.
 - `Linux/Eng/` - Конспекты по командам Linux и терминалу на английском языке.
 
 ---
 
-## 📜 Лицензия
+## Лицензия
 
 Распространяется под лицензией **GNU General Public License v3.0 (GPLv3)**. Подробности можно найти в файле [LICENSE](LICENSE).

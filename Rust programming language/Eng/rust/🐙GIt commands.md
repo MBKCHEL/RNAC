@@ -1,4 +1,4 @@
-### 🚀 Basic Loop (Commit and Send)
+### Basic Loop (Commit and Send)
 
 
 
@@ -10,7 +10,7 @@ git commit -m "Message" # Commit changes with comment
 git push origin main # Push commits to GitHub to the main branch
 ```
 
-### 🔄 Get updates from GitHub
+### Get updates from GitHub
 
 
 
@@ -19,7 +19,7 @@ git pull origin main # Download and immediately merge the latest changes from th
 git fetch # Just check/download changes without merging
 ```
 
-### 🛠️ Fixing jambs (Cancel and clear)
+### Fixing jambs (Cancel and clear)
 
 
 
@@ -30,7 +30,7 @@ git checkout -b new-branch # Create a new branch and immediately jump into it
 git branch -D branch-name # Delete Vecti locally
 ```
 
-### 🏷️ Tags and Releases (For assembly in Actions)
+### Tags and Releases (For assembly in Actions)
 
 
 
@@ -41,7 +41,7 @@ git tag -d v1.0.0 # Remove tag locally
 git push origin --delete v1.0.0 # Delete a tag on GitHub
 ```
 
-### 📜 History and comparison
+### History and comparison
 
 
 

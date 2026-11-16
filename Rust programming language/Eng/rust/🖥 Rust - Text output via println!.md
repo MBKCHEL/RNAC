@@ -2,7 +2,7 @@
 
 >  **If you don't know what macros are and why there is a `!` at the end, check out the file:** [[! Macros in Rust|Click here!]]
 
-### ⚠️ The exclamation point `!` is important!
+### The exclamation point `!` is important!
 
 The `!` symbol at the end means that this is **not a regular function (method), but a MACRO**.
 
@@ -11,7 +11,7 @@ The `!` symbol at the end means that this is **not a regular function (method), 
 - **Safety:** If you specified a location for a variable, but forgot to pass it, the compiler will throw an error _before_ the program starts.
 
 
-### 🚀 Use options (Cheat Sheet)
+### Use options (Cheat Sheet)
 
 #### 1. Plain text output
 

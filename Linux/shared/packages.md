@@ -1,4 +1,4 @@
-# 📦 Package Managers Cheat Sheet
+# Package Managers Cheat Sheet
 **Legend**
 
 - `pkg` = package name, `file` = path to a local package file

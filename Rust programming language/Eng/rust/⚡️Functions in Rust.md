@@ -62,7 +62,7 @@ println!("{x}"); // Prints 5!
 
 There are 3 ways to "give" a variable to another function in Rust:
 
-#### 🟢 Method 1: Give it away for good (Transfer of Ownership / Move)
+#### Method 1: Give it away for good (Transfer of Ownership / Move)
 
 If a type stores data on the heap (for example, `String`), then when passed to a function, the old variable **dies** and is no longer available in `main()`.
 
@@ -82,7 +82,7 @@ print_message(my_str); // Give the variable
 }
 ```
 
-#### 🟡 Method 2: Give it a try / Read (Unmutable link `&`)
+#### Method 2: Give it a try / Read (Unmutable link `&`)
 
 If a function just needs to **look** at the data without changing it, pass the reference using `&`. Ownership remains with `main()`.
 
@@ -102,7 +102,7 @@ println!("The line is still here: {my_str}");
 }
 ```
 
-#### 🔴 Method 3: Give “drive and change” (Mutable link `&mut`)
+#### Method 3: Give “drive and change” (Mutable link `&mut`)
 
 If the function needs to **change** a variable, pass a mutable reference `&mut`. The variable in `main()` should also initially be `mut`.
 
@@ -121,7 +121,7 @@ println!("{my_str}"); // Prints: "Hello!!!"
 }
 ```
 
-### 💡 A short cheat sheet:
+### A short cheat sheet:
 
 1. Should I just give the argument `i32`, `bool`, `f64`? → Pass it on as is (numbers are simply copied).
 

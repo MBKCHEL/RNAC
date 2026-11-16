@@ -1,22 +1,22 @@
-## 🎯 What it is and why you need it
+## What it is and why you need it
 Rodio is the most popular audio library in the Rust ecosystem. It takes care of all the heavy lifting with the system audio card and sound streams, allowing you to easily load and play files (.mp3, .wav, .flac, .ogg).
 
 Main advantage: Works "out of the box" on Linux, Windows, and macOS without needing to write low-level code for each C-library sound server (ALSA, PulseAudio, PipeWire).
 
-## 🧱 Main Entities (How it works)
+## Main Entities (How it works)
 All work with rodio relies on 3 main elements:
 
 * **OutputStream (Audio Output)** - connection to your sound card/speakers. It must stay alive as long as music is playing. If dropped (removed from memory), the sound instantly disappears.
 * **Sink (Control Player / "Sink")** - the main control organ. You "feed" audio into it, and use it to pause, adjust volume, stop, or seek the track.
 * **Decoder (Decoder)** - reads an audio file from disk (or memory) and turns compressed bytes (.mp3 / .ogg) into a raw stream of audio samples.
 
-## 🛠 Dependency Setup (Cargo.toml)
+## Dependency Setup (Cargo.toml)
 ```toml
 [dependencies]
 rodio = "0.17" # Version may vary
 ```
 
-## ⚙️ Basic Code Template
+## Basic Code Template
 
 ```Rust
 use rodio::{Decoder, OutputStream, Sink};
@@ -47,7 +47,7 @@ fn main() {
 }
 ```
 
-## 🎛 Основные Команды Управления (`Sink`)
+## Основные Команды Управления (`Sink`)
 
 Всё управление воспроизведением происходит через методы `Sink`:
 
@@ -62,7 +62,7 @@ fn main() {
 | **`sink.empty()`**         | Check if the track queue is empty (bool)           | `if sink.empty() { ... }`     |
 | **`sink.append(source)`**  | Add the next track to the queue                    | `sink.append(next_source);`   |
 
-## ⚠️ Important Nuances and Pitfalls
+## Important Nuances and Pitfalls
 
 1. **Do not let OutputStream get dropped:**
     
