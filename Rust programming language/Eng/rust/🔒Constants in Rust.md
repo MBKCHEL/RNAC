@@ -6,7 +6,6 @@ A constant in Rust is not just a variable that cannot be changed. This is the va
 
 Imagine that you are writing a network utility or file parser. You need to hardcode the size of the data packet to be read in bytes.
 
-
 ```rust
 // Declare globally (outside functions). The `usize` type is ideal for memory sizes.
 const MAX_PACKET_SIZE: usize = 4096;

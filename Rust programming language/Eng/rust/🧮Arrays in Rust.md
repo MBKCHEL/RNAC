@@ -44,11 +44,9 @@ fn main() {
 
 The array itself cannot be flipped in place if it is immutable. But you can read it backwards.
 
-Rust
-
 ```rust
 fn main() {
-    let numbers =;
+        let numbers = [1, 2, 3, 4, 5];
 
     // `.iter()` makes an iterator from the array, and `.rev()` reverses the search direction
     for num in numbers.iter().rev() {
@@ -62,11 +60,9 @@ fn main() {
 
 To find an element, we use the `.find()` iterator method. It returns a special type `Option` (can contain a value, or `None` if nothing is found) - this eliminates the error that the program will crash if there is no element.
 
-Rust
-
 ```rust
 fn main() {
-    let engineering_codes =;
+    let engineering_codes = [101, 204, 308, 404, 500];
 
     // Look for the 404 code in the array
     let rough_code = 404;
@@ -84,8 +80,6 @@ fn main() {
 
 If you need a 100-element array filled with zeros or ones, you don't need a `for` loop. Rust has a special repetition syntax.
 
-Rust
-
 ```rust
 fn main() {
 // Creates an array of 50 elements of type i32, and each element is -1
@@ -99,8 +93,6 @@ println!("First element: {}", background_buffer[0]);
 ### Fun 4: Outputting an array in one line (Debugging)
 
 In C#, if you write `Console.WriteLine(array)`, you will simply get the name of the system type in the console (`System.Int32[]`). In Rust, the debugging macro outputs the struct structure "as is".
-
-Rust
 
 ```rust
 fn main() {
