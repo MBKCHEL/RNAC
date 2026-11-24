@@ -15,14 +15,33 @@ cat part1.txt part2.txt > full.txt
 **Output: part1 + part2, and a new file is created with this output**
 
 ## Quickly create a text file straight from the terminal (without opening nano):
-Type the command, write text from the keyboard, then press Ctrl + D at the end (end-of-file signal)
+
+**Method 1 -- via Ctrl + D (end-of-file signal):**
+Type the command, write your text, then press Ctrl + D on a new line at the end
 ```bash
 cat > note.txt # Press enter here
-# Then just type, and once you're done -- Ctrl + D
+# Then just type, and once you're done -- Enter and Ctrl + D
 Hello, this is the first line
 And this is the second one
 ```
 **Output: obviously, whatever you typed**
+
+**Method 2 -- via the EOF stop-word (Here-Doc):**
+At the start, `<< 'EOF'` tells the shell your stop-word (quotes are needed so variables like `$USER` don't get substituted; if you skip the quotes, the shell will expand variables, for example `$USER` will expand into your username). Type as many lines or code blocks as you want, and to finish -- just type `EOF` on a new line and press Enter.
+```bash
+cat << 'EOF' > note.txt
+Hello, this is the first line
+And this is the second one
+EOF
+```
+**Output: same thing, but way better for pasting big chunks of code without newline glitches**
+
+**Note for fish shell:** in `fish`, the classic `<< EOF` syntax is intentionally removed (it throws `Expected a string, but found a redirection`). In `fish`, multiline text is passed directly inside quotes via `printf`:
+```fish
+printf '%s\n' 'Hello, this is the first line
+And this is the second one' > note.txt
+```
+*(Single quotes `'` work just like `'EOF'` -- they prevent variables like `$USER` from expanding).*
 
 ## Insert text from the keyboard between two files (the - symbol means standard input)
 ```bash
