@@ -8,9 +8,6 @@ It runs indefinitely until you forcefully stop it using `break`.
 
 - **Trick:** `loop` can **return a value** via `break`!
 
-
-
-
 ```Rust
 fn main() {
     let mut counter = 0;
@@ -37,9 +34,6 @@ Executes a block of code until **condition is `true`**.
 
 - **Minus:** If you use `while` to iterate through an array by index, it is slow (Rust checks at each iteration to see if we have gone beyond the bounds of the array) and unsafe.
 
-
-
-
 ```Rust
 fn main() {
     let mut number = 3;
@@ -64,8 +58,6 @@ The safest, fastest and idiomatic (correct) loop in Rust. Used to iterate over c
 
 #### Example A: Iterating over a range of numbers
 
-
-
 ```Rust
 fn main() {
     // 1..4 means from 1 to 3 (4 is not included)
@@ -84,8 +76,6 @@ fn main() {
 
 #### Example B: Looping through array elements
 
-
-
 ```Rust
 fn main() {
     let a =;
@@ -98,12 +88,44 @@ fn main() {
 
 ```
 
+### Example C: Iterator and pattern dereferencing (`for &item in list.iter()`) (finding the largest number)
+
+```Rust
+fn largest(list: &[i32]) -> i32 {
+    let mut largest = list[0];
+
+    // list.iter() yields references (&i32), and `&item` dereferences them to `i32`
+    // right away so we don't have to write `*item > largest` inside the loop body.
+    for &item in list.iter() {
+        if item > largest {
+            largest = item;
+        }
+    }
+
+    largest
+}
+
+fn main() {
+    let number_list = vec![50, 25, 3, 65];
+
+    // &number_list is passed as a slice &[i32].
+    let result = largest(&number_list);
+    println!("Biggest num = {result}"); // Prints 65
+}
+```
+
+Key notes for the margins:
+
+- **`list.iter()` vs `for element in a`:** In Example B, the array was iterated by value (`Copy` for `i32`), whereas `.iter()` explicitly gives an iterator over references (`&i32`) -- a pattern you'll see constantly with `Vec`, slices, and other collections.
+    
+- **Dereferencing in the pattern (`for &item`):** The reference is stripped right in the loop header, so the condition uses `item > largest` instead of `*item > largest`.
+    
+- **Caveat for later:** `list[0]` is used here for simplicity (an empty slice will panic); in real code, you'd usually check for emptiness or use `.first()`.
 ### Loop management: `break` and `continue`
 
 1. **`break`** - immediately breaks out of the loop.
 
 2. **`continue`** - skips the rest of the current lap and immediately moves on to the next one.
-
 
 #### Loop Labels
 

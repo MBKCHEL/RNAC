@@ -4,8 +4,6 @@ A regular array `[i32; 5]` in Rust has a fixed size on the heap/stack - it canno
 
 ### 2. Methods of creation
 
-
-
 ```Rust
 // 1. Empty vector via constructor
 let mut v: Vec<i32> = Vec::new();
@@ -18,8 +16,6 @@ let mut v3 = Vec::with_capacity(100);
 ```
 
 ### 3. Adding and removing elements
-
-
 
 ```Rust
 let mut pool: Vec<char> = Vec::new();
@@ -36,8 +32,6 @@ let last = pool.pop(); //Some('e')
 
 ### 4. Accessing elements
 
-
-
 ```Rust
 let numbers = vec![10, 20, 30];
 
@@ -52,8 +46,6 @@ None => println!("There is no element!"),
 ```
 
 ### 5. Looping through a vector (Iteration)
-
-
 
 ```Rust
 let items = vec!["Rust", "C++", "Python"];
